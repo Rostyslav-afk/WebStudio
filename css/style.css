@@ -6,3 +6,31 @@
     --main-team:#F5F4FA;
     --footer-background:#2F303A;
 }
+
+header > a{
+    font-family: Raleway;
+}
+header > nav > li{
+    font-family: Roboto;
+}
+main section:first-child{
+    font-family: Roboto;
+}
+main > section > button{
+    font-family: Roboto;
+}
+main:nth-child(2){
+    font-family: Roboto;
+}
+main:nth-child(3){
+    font-family: Roboto;
+}
+main:last-child{
+    font-family: Roboto;
+}
+footer > a{
+    font-family: Raleway;
+}
+footer > address{
+    font-family: Roboto;
+}
