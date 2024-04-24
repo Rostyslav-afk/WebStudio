@@ -6,12 +6,17 @@
     --main-team:#F5F4FA;
     --footer-background:#2F303A;
 }
-
-header > a{
-    font-family: Raleway;
+header > a > strong > span{
+    color: #2196F3;
 }
-header > nav > li{
-    font-family: Roboto;
+header > a{
+font-family: Raleway;
+color: black;
+text-decoration: none;
+font-size: 26px;
+}
+header > nav > ul > li {
+font-family: Roboto;
 }
 main section:first-child{
     font-family: Roboto;
