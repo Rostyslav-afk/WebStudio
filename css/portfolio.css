@@ -7,6 +7,7 @@
     --footer-background: #2F303A;
     --header-text: #000;
     --footer-number: rgba(255, 255, 255, 0.6);
+    --card-item: #EEE;
 }
 
 *,
@@ -71,9 +72,11 @@ img {
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
-.active{
+
+.active {
     color: var(--color-accent);
 }
+
 .nav-link:hover {
     color: var(--color-accent);
     font-family: "Roboto", sans-serif;
@@ -98,6 +101,67 @@ img {
     color: var(--color-accent);
 }
 
+
+/* Btn */
+
+.btn-btn {
+    width: 125px;
+    height: 38px;
+    border-radius: 4px;
+    border: 4px solid var(--main-team);
+    background: var(--main-team);
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    /* 162.5% */
+    letter-spacing: 0.48px;
+}
+
+.btn-btn:hover {
+    background: var(--color-accent);
+    border-radius: 4px;
+    border: 4px solid var(--color-accent);
+    /* shadow-middle */
+    /* box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);*/
+}
+
+/* Cards */
+.card-item {
+    width: 370px;
+    height: 404px;
+    border: 1px solid var(--card-item);
+    background: var(--main-background);
+}
+
+.card-img {
+    width: 370px;
+    height: 294px;
+}
+
+.card-title {
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2;
+    /* 200% */
+    letter-spacing: 1.08px;
+}
+
+.card-text {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 187.5% */
+    letter-spacing: 0.48px;
+}
 
 /* Footer */
 
