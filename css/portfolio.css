@@ -39,8 +39,24 @@ img {
     display: block;
 }
 
+/* Container */
+
+.container{
+    outline: 1px solid red;
+    width: 1200px;  
+    margin-left: auto; 
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
 /* Header */
 
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 .logo-span {
     color: var(--color-accent);
@@ -103,6 +119,11 @@ img {
 
 
 /* Btn */
+
+.btn{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .btn-btn {
     width: 125px;
@@ -168,6 +189,8 @@ img {
 
 .footer {
     background: var(--footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
