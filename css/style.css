@@ -42,10 +42,10 @@ img {
 
 
 /* Container */
-.container{
+.container {
     outline: 1px solid red;
-    width: 1200px;  
-    margin-left: auto; 
+    width: 1200px;
+    margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -53,10 +53,17 @@ img {
 
 /* Header */
 
-.header{
+.header {
     padding-top: 24px;
     padding-bottom: 25px;
 }
+
+.box {
+    display: flex;
+    align-items: center;
+
+}
+
 .logo-span {
     color: var(--color-accent);
 }
@@ -68,6 +75,17 @@ img {
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
+    margin-right: 93px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
 }
 
 .logo-span {
@@ -79,6 +97,10 @@ img {
     letter-spacing: 0.78px;
 }
 
+.nav-list {
+    margin-right: 344px;
+}
+
 .nav-link {
     color: var(--text-color);
     font-family: "Roboto", sans-serif;
@@ -87,9 +109,11 @@ img {
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
-.active{
+
+.active {
     color: var(--color-accent);
 }
+
 .nav-link:hover {
     color: var(--color-accent);
     font-family: "Roboto", sans-serif;
@@ -107,6 +131,7 @@ img {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+
 }
 
 .header-link:hover,
@@ -115,20 +140,25 @@ img {
 }
 
 /* Hero */
-.hero{
+
+.hero {
     background-color: var(--footer-background);
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
 }
+
 .hero-title {
     color: var(--main-background);
     text-align: center;
-    font-family:"Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 44px;
     font-weight: 900;
-    line-height: 1.36; /* 136.364% */
+    line-height: 1.36;
+    /* 136.364% */
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -143,14 +173,22 @@ img {
     line-height: 1.87;
     /* 187.5% */
     letter-spacing: 0.96px;
+    margin-bottom: 200px;
 }
 
 
 /* Advantages */
 
-.advantages{
+.advantages {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
 }
 
 .advantages-item {
@@ -161,6 +199,12 @@ img {
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    display: flex;
+}
+
+.advantages-title {
+    display: flex;
+    width: 270px;
 }
 
 .advantages-text {
@@ -171,14 +215,18 @@ img {
     line-height: 1.71;
     /* 171.429% */
     letter-spacing: 0.42px;
+    width: 270px;
 }
 
 
 /* Work */
 
-.work{
+.work {
     padding-top: 94px;
     padding-bottom: 94px;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 50px;
 }
 
 .work-title {
@@ -188,16 +236,29 @@ img {
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
+    padding-top: 118px;
+    padding-bottom: 50px;
+}
+
+.work-list {
+    display: flex;
+}
+
+.work-img {
+    padding-right: 30px;
+    margin-bottom: 90px;
 }
 
 /* Comand */
 
 
-.comand{
-    background-color: var(--main-team);
+.comand {
+    background: var(--main-team);
     padding-top: 94px;
     padding-bottom: 94px;
+    display: flex;
 }
+
 .comand-title {
     color: var(--text-color);
     font-family: "Roboto", sans-serif;
@@ -205,13 +266,27 @@ img {
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.comand-list {
+    display: flex;
+
+}
+
+.comand-item {
+
+    width: 270px;
+    height: 368px;
+    background: #FFF;
 }
 
 .comand-img {
     width: 270px;
     height: 260px;
+    background-color: var(--main-team);
+    padding-right: 30px;
 }
-
 .comand-subtitle {
     color: var(--text-color);
     font-family: "Roboto", sans-serif;
@@ -219,6 +294,7 @@ img {
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
+   
 }
 
 .comand-text {
@@ -228,6 +304,8 @@ img {
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.48px;
+    background-color: var(--main-background);
+    
 }
 
 
