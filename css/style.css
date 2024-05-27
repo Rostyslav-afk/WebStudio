@@ -186,7 +186,7 @@ img {
 
 .advantages-list {
     display: flex;
-    flex-wrap: wrap;
+    
     row-gap: 30px;
     column-gap: 30px;
 }
@@ -199,11 +199,11 @@ img {
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    display: flex;
+    /* display: flex; */
 }
 
 .advantages-title {
-    display: flex;
+    
     width: 270px;
 }
 
@@ -256,7 +256,6 @@ img {
     background: var(--main-team);
     padding-top: 94px;
     padding-bottom: 94px;
-    display: flex;
 }
 
 .comand-title {
@@ -266,26 +265,24 @@ img {
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
-    margin-bottom: 50px;
+   
 }
 
 .comand-list {
     display: flex;
-
+    justify-content: center;
+    gap: 30px;
 }
 
 .comand-item {
-
     width: 270px;
     height: 368px;
+    border: 1px;
     background: #FFF;
 }
 
 .comand-img {
     width: 270px;
-    height: 260px;
-    background-color: var(--main-team);
-    padding-right: 30px;
 }
 .comand-subtitle {
     color: var(--text-color);
@@ -294,7 +291,8 @@ img {
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
-   
+    margin-top: 30px;
+    text-align: center;
 }
 
 .comand-text {
@@ -304,8 +302,8 @@ img {
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.48px;
-    background-color: var(--main-background);
-    
+    margin-top: 10px;
+    text-align: center;
 }
 
 
