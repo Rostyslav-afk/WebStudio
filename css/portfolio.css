@@ -110,7 +110,7 @@ img {
     letter-spacing: 0.28px;
 }
 
-.active {
+.active{
     color: var(--color-accent);
 }
 
