@@ -182,7 +182,7 @@ img {
 
 .advantages {
     padding-top: 94px;
-    padding-bottom: 94px;
+    
 }
 
 .advantages-list {
@@ -197,7 +197,6 @@ img {
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.42px;
-    text-transform: uppercase;
     /* display: flex; */
 }
 
@@ -223,8 +222,6 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
-    padding-top: 118px;
-    padding-bottom: 50px;
 }
 
 .work-title {
@@ -239,11 +236,7 @@ img {
 
 .work-list {
     display: flex;
-}
-
-.work-img {
-    padding-right: 30px;
-    margin-bottom: 90px;
+    gap: 30px;
 }
 
 /* Comand */
