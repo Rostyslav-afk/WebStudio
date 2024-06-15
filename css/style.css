@@ -237,6 +237,11 @@ img {
 .work-list {
     display: flex;
     gap: 30px;
+    flex-grow: 2;
+    
+}
+.work-item{
+    
 }
 
 /* Comand */
