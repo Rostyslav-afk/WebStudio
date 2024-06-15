@@ -265,8 +265,13 @@ img {
 
 }
 
-.work-item {}
+.work-item {
+    flex-basis: calc((100% - 60px) / 3);
+}
 
+.work-img{
+    width: 100%;
+}
 /* Comand */
 
 
@@ -298,10 +303,11 @@ img {
     height: 368px;
     border: 1px;
     background: #FFF;
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .comand-img {
-    width: 270px;
+    width: 100%;
 }
 
 .comand-subtitle {
