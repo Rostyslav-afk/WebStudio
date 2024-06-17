@@ -356,7 +356,7 @@ img {
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-span {
@@ -366,9 +366,11 @@ img {
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
-    padding-bottom: 20px;
 }
-
+.address{
+    margin-top: 20px;
+    font-style: normal;
+}
 .address-link {
     color: var(--main-background);
     font-family: "Roboto", sans-serif;
@@ -377,9 +379,17 @@ img {
     line-height: 1.71;
     /* 171.429% */
     letter-spacing: 0.42px;
-    padding-bottom: 9px;
+    
 }
-
+.adres-list{
+    margin-top: 9px;
+    /* display: flex;
+    flex-direction: column;
+    gap: 9px; */
+}
+.address-item:nth-child(1){
+    margin-bottom: 9px;
+}
 .address-citation {
     color: var(--footer-number);
     font-family: "Roboto", sans-serif;
@@ -388,5 +398,4 @@ img {
     line-height: 1.71;
     /* 171.429% */
     letter-spacing: 0.42px;
-    padding-bottom: 9px;
 }
