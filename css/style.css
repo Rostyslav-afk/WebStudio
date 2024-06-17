@@ -175,6 +175,10 @@ img {
     line-height: 1.87;
     /* 187.5% */
     letter-spacing: 0.96px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 32px;
+    padding-left: 32px;
 }
 
 
@@ -300,7 +304,7 @@ img {
 
 .comand-item {
     width: 270px;
-    height: 368px;
+    /* height: 368px; */
     border: 1px;
     background: #FFF;
     flex-basis: calc((100% - 60px) / 3);
@@ -309,7 +313,11 @@ img {
 .comand-img {
     width: 100%;
 }
-
+.comand-box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
 .comand-subtitle {
     color: var(--text-color);
     font-family: "Roboto", sans-serif;
@@ -317,7 +325,7 @@ img {
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     text-align: center;
 }
 
@@ -348,6 +356,7 @@ img {
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
+    padding-bottom: 20px;
 }
 
 .footer-span {
@@ -357,6 +366,7 @@ img {
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
+    padding-bottom: 20px;
 }
 
 .address-link {
@@ -367,6 +377,7 @@ img {
     line-height: 1.71;
     /* 171.429% */
     letter-spacing: 0.42px;
+    padding-bottom: 9px;
 }
 
 .address-citation {
@@ -377,4 +388,5 @@ img {
     line-height: 1.71;
     /* 171.429% */
     letter-spacing: 0.42px;
+    padding-bottom: 9px;
 }
