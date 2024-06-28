@@ -211,21 +211,21 @@ img {
     width: 270px;
     height:120px;
     display: block;
-    background-image:url(../img/antenna1.png) ;
+    background-image:url(../img/antenna.png) ;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
 }
 .advantages-item:nth-child(2):before{
-    background-image: url(../img/clock1.png);
+    background-image: url(../img/clock.png);
 }
 
 .advantages-item:nth-child(3):before{
-    background-image: url(../img/diagram1.png);
+    background-image: url(../img/diagram.png);
 }
 
 .advantages-item:nth-child(4):before{
-    background-image: url(../img/astronaut1.png);
+    background-image: url(../img/astronaut.png);
 }
 
 .advantages-title {
