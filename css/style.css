@@ -146,6 +146,8 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image: url(../img/hero-bc.jpg);
+    background-size: cover;
 }
 
 .hero-title {
@@ -164,8 +166,9 @@ img {
 }
 
 .hero-button {
-    border-radius: 4px;
     background: var(--color-accent);
+    border-radius: 4px;
+    border: var(--color-accent);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--main-background);
     text-align: center;
@@ -209,22 +212,23 @@ img {
     border-radius: 4px;
     background: var(--main-team);
     width: 270px;
-    height:120px;
+    height: 120px;
     display: block;
-    background-image:url(../img/antenna.png) ;
+    background-image: url(../img/antenna.png);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
 }
-.advantages-item:nth-child(2):before{
+
+.advantages-item:nth-child(2):before {
     background-image: url(../img/clock.png);
 }
 
-.advantages-item:nth-child(3):before{
+.advantages-item:nth-child(3):before {
     background-image: url(../img/diagram.png);
 }
 
-.advantages-item:nth-child(4):before{
+.advantages-item:nth-child(4):before {
     background-image: url(../img/astronaut.png);
 }
 
@@ -273,9 +277,10 @@ img {
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.work-img{
+.work-img {
     width: 100%;
 }
+
 /* Comand */
 
 
@@ -314,11 +319,13 @@ img {
 .comand-img {
     width: 100%;
 }
-.comand-box{
+
+.comand-box {
     padding-top: 30px;
     padding-bottom: 30px;
-    
+
 }
+
 .comand-subtitle {
     color: var(--text-color);
     font-family: "Roboto", sans-serif;
@@ -368,10 +375,12 @@ img {
     line-height: 1.38;
     letter-spacing: 0.78px;
 }
-.address{
+
+.address {
     margin-top: 20px;
     font-style: normal;
 }
+
 .address-link {
     color: var(--main-background);
     font-family: "Roboto", sans-serif;
@@ -380,17 +389,20 @@ img {
     line-height: 1.71;
     /* 171.429% */
     letter-spacing: 0.42px;
-    
+
 }
-.adres-list{
+
+.adres-list {
     margin-top: 9px;
     /* display: flex;
     flex-direction: column;
     gap: 9px; */
 }
-.address-item:nth-child(1){
+
+.address-item:nth-child(1) {
     margin-bottom: 9px;
 }
+
 .address-citation {
     color: var(--footer-number);
     font-family: "Roboto", sans-serif;
