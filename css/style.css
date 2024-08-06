@@ -1,4 +1,4 @@
-:root {
+    :root {
     --color-accent: #2196F3;
     --text-color: #212121;
     --description-color: #757575;
@@ -308,6 +308,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 30px;
+    
 }
 
 .comand-item {
