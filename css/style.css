@@ -7,6 +7,7 @@
         --footer-background: #2F303A;
         --header-text: #000;
         --footer-number: rgba(255, 255, 255, 0.6);
+        --border-clients: #AFB1B8;
     }
 
     *,
@@ -126,11 +127,12 @@
     .header-svg {
         fill: var(--description-color);
         width: 10px;
-        height: 16px;     
+        height: 16px;
+
     }
-    .header-svg:hover{
-        fill: var(--color-accent);
-    }
+
+    .header-item {}
+
     .header-link {
         color: var(--description-color);
         font-family: "Roboto", sans-serif;
@@ -144,6 +146,10 @@
     .header-link:hover,
     .header-link:focus {
         color: var(--color-accent);
+
+        .header-svg:hover {
+            fill: var(--color-accent);
+        }
     }
 
     /* Hero */
@@ -228,6 +234,7 @@
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 30px;
+
     }
 
     .advantages-item:nth-child(2):before {
@@ -357,8 +364,55 @@
         letter-spacing: 0.48px;
         margin-top: 10px;
         text-align: center;
+        margin-bottom: 28px;
     }
 
+    .comand-svg {
+        fill: gray;
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Clients */
+
+    .clients {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .clients-title {
+        color: var(--text-color);
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
+    }
+
+    .clients-list {
+        display: flex;
+        gap: 30px;
+    }
+
+    .clients-item {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-right: 32px;
+        padding-left: 32px;
+        border: 1px solid var(--border-clients);
+        border-radius: 4px;
+    }
+
+    .clients-svg {
+        width: 106px;
+        height: 60px;
+        fill: var(--border-clients);
+    }
+
+    .clients-svg:hover {
+        fill: var(--color-accent);
+    }
 
     /* Footer */
 
@@ -422,4 +476,26 @@
         line-height: 1.71;
         /* 171.429% */
         letter-spacing: 0.42px;
+    }
+
+    .footer-subtitle {
+        color: var(--main-background);
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .footer-list {
+        display: flex;
+        gap: 10px;
+    }
+
+    .footer-svg {
+        width: 20px;
+        height: 20px;
+        fill: var(--main-background);
+        
     }
