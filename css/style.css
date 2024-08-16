@@ -322,7 +322,6 @@
         display: flex;
         justify-content: center;
         gap: 30px;
-
     }
 
     .comand-item {
@@ -341,7 +340,7 @@
     .comand-box {
         padding-top: 30px;
         padding-bottom: 30px;
-
+        
     }
 
     .comand-subtitle {
@@ -367,6 +366,12 @@
         margin-bottom: 28px;
     }
 
+    .comand-boxs{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
     .comand-svg {
         fill: gray;
         width: 20px;
