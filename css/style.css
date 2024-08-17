@@ -8,6 +8,7 @@
         --header-text: #000;
         --footer-number: rgba(255, 255, 255, 0.6);
         --border-clients: #AFB1B8;
+        --foter-svg:rgba(255, 255, 255, 0.10);
     }
 
     *,
@@ -44,7 +45,7 @@
 
     /* Container */
     .container {
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
         width: 1200px;
         margin-left: auto;
         margin-right: auto;
@@ -79,6 +80,9 @@
         margin-right: 93px;
     }
 
+    .header-nav{
+        margin-right: auto;
+    }
     .nav-list {
         display: flex;
         gap: 50px;
@@ -96,10 +100,6 @@
         font-weight: 700;
         line-height: 1.38;
         letter-spacing: 0.78px;
-    }
-
-    .nav-list {
-        margin-right: 344px;
     }
 
     .nav-link {
@@ -126,12 +126,14 @@
 
     .header-svg {
         fill: var(--description-color);
-        width: 10px;
-        height: 16px;
-
+        width: 16px;
+        height: 12px;
     }
 
-    .header-item {}
+    .header-item:nth-child(2) .header-svg{
+        width: 10px;
+        height: 16px;
+    }
 
     .header-link {
         color: var(--description-color);
@@ -140,14 +142,18 @@
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.28px;
-
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
     }
 
-    .header-link:hover,
-    .header-link:focus {
-        color: var(--color-accent);
+    .header-item:hover{ 
+        .header-link{
+            color: var(--color-accent);
+        }
 
-        .header-svg:hover {
+        .header-svg {
             fill: var(--color-accent);
         }
     }
@@ -365,12 +371,17 @@
         text-align: center;
         margin-bottom: 28px;
     }
-
-    .comand-boxs{
+    .comand-lest{
         display: flex;
-        gap: 30px;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .comand-lenk{
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
     .comand-svg {
         fill: gray;
@@ -426,7 +437,6 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
     .footer-logo {
         color: var(--main-background);
         font-family: "Raleway", sans-serif;
@@ -445,7 +455,9 @@
         line-height: 1.38;
         letter-spacing: 0.78px;
     }
-
+    .footer-manager{
+        
+    }
     .address {
         margin-top: 20px;
         font-style: normal;
@@ -471,6 +483,7 @@
 
     .address-item:nth-child(1) {
         margin-bottom: 9px;
+    
     }
 
     .address-citation {
@@ -494,13 +507,19 @@
     }
 
     .footer-list {
-        display: flex;
-        gap: 10px;
+    display: flex;
+    gap: 10px;
     }
-
+    .footer-socials{
+        padding: 12px;
+        background-color: var(--foter-svg);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .footer-svg {
         width: 20px;
         height: 20px;
         fill: var(--main-background);
-        
     }

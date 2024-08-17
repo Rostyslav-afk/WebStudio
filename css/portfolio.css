@@ -66,6 +66,7 @@ body {
 .box {
     display: flex;
     align-items: center;
+
 }
 
 .logo-span {
@@ -82,6 +83,9 @@ body {
     margin-right: 93px;
 }
 
+.header-nav{
+    margin-right: auto;
+}
 .nav-list {
     display: flex;
     gap: 50px;
@@ -99,11 +103,6 @@ body {
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
-}
-
-.header-nav {
-    margin-right: auto;
-
 }
 
 .nav-link {
@@ -128,6 +127,16 @@ body {
     letter-spacing: 0.28px;
 }
 
+.header-svg {
+    fill: var(--color-accent);
+    width: 16px;
+    height: 12px;
+}
+
+.header-item:nth-child(2) .header-svg{
+    width: 10px;
+    height: 16px;
+}
 
 .header-link {
     color: var(--description-color);
@@ -136,12 +145,20 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
-
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
 }
 
-.header-link:hover,
-.header-link:focus {
-    color: var(--color-accent);
+.header-item:hover{ 
+    .header-link{
+        color: var(--color-accent);
+    }
+
+    .header-svg {
+        fill: var(--color-accent);
+    }
 }
 
 
