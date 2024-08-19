@@ -303,7 +303,33 @@
 
     .work-img {
         width: 100%;
+        
     }
+
+    /* .work-box {
+        padding-top: 27px;
+        padding-bottom: 27px;
+        padding-right: 107px;
+        padding-left: 107px;
+        background-color: rgba(47, 48, 58, 0.80);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+
+    .work-text {
+        color: #FFF;
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    } */
 
     /* Comand */
 
@@ -450,10 +476,12 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
-    .footer-box{
+
+    .footer-box {
         display: flex;
         gap: 70px;
     }
+
     .footer-logo {
         color: var(--main-background);
         font-family: "Raleway", sans-serif;
@@ -527,17 +555,20 @@
         display: flex;
         gap: 10px;
     }
-    .footer-social{
+
+    .footer-social {
         padding: 12px;
-        background-color:  rgba(255, 255, 255, 0.10);
+        background-color: rgba(255, 255, 255, 0.10);
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .footer-social:hover{
+
+    .footer-social:hover {
         background-color: var(--color-accent);
     }
+
     .footer-svg {
         width: 20px;
         height: 20px;
