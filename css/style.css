@@ -9,6 +9,7 @@
         --footer-number: rgba(255, 255, 255, 0.6);
         --border-clients: #AFB1B8;
         --foter-svg: rgba(255, 255, 255, 0.10);
+        --comand-svg: #AFB1B8;
     }
 
     *,
@@ -423,7 +424,7 @@
     }
 
     .comand-svg {
-        fill: gray;
+        fill: var(--comand-svg);
         width: 20px;
         height: 20px;
     }
@@ -456,7 +457,15 @@
         padding-right: 32px;
         padding-left: 32px;
         border: 1px solid var(--border-clients);
-        border-radius: 4px;
+        border-radius: 4px; 
+    }
+
+    .clients-item:hover{
+        border: 1px solid var(--color-accent);
+
+        .clients-svg {
+            fill: var(--color-accent);
+        }
     }
 
     .clients-svg {
@@ -464,11 +473,6 @@
         height: 60px;
         fill: var(--border-clients);
     }
-
-    .clients-svg:hover {
-        fill: var(--color-accent);
-    }
-
     /* Footer */
 
     .footer {
