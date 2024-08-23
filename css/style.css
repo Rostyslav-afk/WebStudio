@@ -300,14 +300,15 @@
 
     .work-item {
         flex-basis: calc((100% - 60px) / 3);
+        position: relative;
     }
 
     .work-img {
         width: 100%;
-        
+        position: relative;
     }
 
-    /* .work-box {
+    .work-box {
         padding-top: 27px;
         padding-bottom: 27px;
         padding-right: 107px;
@@ -317,6 +318,10 @@
         justify-content: center;
         align-items: center;
         position: absolute;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1; 
     }
 
     .work-text {
@@ -330,7 +335,7 @@
         top: 0;
         left: 0;
         bottom: 0;
-    } */
+    }
 
     /* Comand */
 
@@ -457,10 +462,10 @@
         padding-right: 32px;
         padding-left: 32px;
         border: 1px solid var(--border-clients);
-        border-radius: 4px; 
+        border-radius: 4px;
     }
 
-    .clients-item:hover{
+    .clients-item:hover {
         border: 1px solid var(--color-accent);
 
         .clients-svg {
@@ -473,6 +478,7 @@
         height: 60px;
         fill: var(--border-clients);
     }
+
     /* Footer */
 
     .footer {
