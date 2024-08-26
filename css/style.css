@@ -259,6 +259,11 @@
 
     .advantages-title {
         margin-bottom: 10px;
+        color: var(--text-color);
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.42px;
     }
 
     .advantages-text {
@@ -321,10 +326,10 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        z-index: 1; 
+        z-index: 1;
     }
 
-    
+
 
     .work-text {
         color: #FFF;
