@@ -602,7 +602,7 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         opacity: 1;
-      }
+    }
 
     .modal {
         position: absolute;
@@ -613,4 +613,91 @@
         padding: 15px;
         background: var(--main-background);
         transform: translate(-50%, -50%);
+        padding: 40px;
+    }
+
+    .modal-title {
+        color: var(--text-color);
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        margin-bottom: 12px;
+    }
+
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-label {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        color: #757575;
+        font-family: "Roboto";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    }
+
+    .modal-label:nth-child(4) {
+        margin-bottom: 20px;
+    }
+
+    .modal-label:nth-child(5) {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 8.38px;
+    }
+
+    .modal-input {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 12px;
+        padding-right: 260px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.20);
+    }
+
+    .modal-input:nth-child(4) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 16px;
+        padding-left: 16px;
+        
+    }
+
+    .modal-link {
+        color: var(--color-accent);
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        text-decoration-line: underline;
+    }
+
+    .modal-button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 52px;
+        padding-right: 52px;
+        color: var(--main-background);
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        /* 187.5% */
+        letter-spacing: 0.96px;
+        border-radius: 4px;
+        background: var(--color-accent);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     }
