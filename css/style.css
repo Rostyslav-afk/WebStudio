@@ -115,8 +115,27 @@
 
     .active {
         color: var(--color-accent);
+        position: relative;
     }
 
+    .active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: ;
+        bottom: 0;
+        width: 48px;
+        height: 4px;
+        background-color: var(--color-accent);
+        transform: scaleX(1);
+        transform-origin: bottom right;
+        border-radius: 4px;
+
+    }
+    .active:hover::after,
+    .active:focus::after{
+        tra
+    }
     .nav-link:hover {
         color: var(--color-accent);
         font-family: "Roboto", sans-serif;
