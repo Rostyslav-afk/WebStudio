@@ -288,7 +288,6 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-
             <form action="" class="modal-form">
                 <div class="modal-box">
                     <label class="modal-label">Ім'я
@@ -300,7 +299,7 @@
                 </div>
                 <div class="modal-box">
                     <label class="modal-label">Телефон
-                        <input type="tel" class="modal-input" required>
+                        <input type="tel" class="modal-input" required pattern="^(\+?38)?0\d{9}$">
                         <svg class="modal-svg">
                             <use href="./img/symbol-defs.svg#icon-phone"></use>
                         </svg>

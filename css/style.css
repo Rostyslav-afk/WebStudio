@@ -637,7 +637,7 @@
         letter-spacing: 0.96px;
         display: flex;
         align-items: center;
-        justify-content: center ;
+        justify-content: center;
         gap: 10px;
     }
 
@@ -645,7 +645,7 @@
         width: 24px;
         height: 24px;
         fill: var(--main-background);
-        
+
     }
 
     /* MODAL */
@@ -686,19 +686,6 @@
         margin-bottom: 12px;
     }
 
-
-
-    .modal-box:hover,
-    .modal-box:focus {
-        .modal-input {
-            border: 1px solid var(--color-accent);
-        }
-
-        .modal-svg {
-            fill: var(--color-accent);
-        }
-    }
-
     .modal-label {
         width: 448px;
         height: 40px;
@@ -725,8 +712,14 @@
 
     .modal-input:hover,
     .modal-input:focus {
-        border-color: var(--color-accent);
-        border-radius: 4px;
+        border: none;
+        outline: 1px solid var(--color-accent);
+
+    }
+
+    .modal-input:hover+.modal-svg,
+    .modal-input:focus+.modal-svg {
+        fill: var(--color-accent);
     }
 
     .modal-textarea {
@@ -745,8 +738,8 @@
         border: 1px solid rgba(33, 33, 33, 0.20);
     }
 
-    .modal-textarea .modal-textarea:focus {
-        color: var(--color-accent);
+    .modal-textarea:focus {
+        border: none;
         outline: 1px solid var(--color-accent);
     }
 
@@ -820,15 +813,20 @@
         align-items: center;
         border: none;
         outline: 1px solid rgba(0, 0, 0, 0.10);
-        cursor: pointer;
+        background: 0;
         position: absolute;
-        top: 8px;
-        bottom: 2px;
-        right: 8px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .form-close:hover .close,
+    .form-close:focus .close {
+        fill: var(--color-accent);
+        cursor: pointer;
     }
 
     .close {
-        width: 18px;
-        height: 18px;
+        width: 11px;
+        height: 11px;
         fill: var(--header-text);
     }
