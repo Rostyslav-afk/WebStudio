@@ -114,6 +114,11 @@ body {
     line-height: 1.14;
     letter-spacing: 0.28px;
     position: relative;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 
 .active {
@@ -132,6 +137,9 @@ body {
     position: absolute;
     top: 55px;
     left: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 
 .nav-link:hover {
@@ -213,6 +221,12 @@ body {
     padding: 6px 22px;
     border: 0;
     border-radius: 5px;
+
+    transition-property: var(--color-accent);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+    transition-delay: 0;
 }
 
 .btn-btn:hover {
@@ -220,6 +234,8 @@ body {
     border: 0;
     color: var(--main-background);
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+
 }
 
 /* Cards */
@@ -233,15 +249,19 @@ body {
 .card-item {
     flex-basis: calc((100% - 60px) / 3);
     position: relative;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+    transition-delay: 0;
 }
 
- .card-item:hover {
+.card-item:hover {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 
     .item-box {
         opacity: 1;
     }
-} 
+}
 
 
 
@@ -283,6 +303,11 @@ body {
     top: 0;
     opacity: 0;
     padding: 63px 24px;
+    transition-property: rgba(33, 150, 243, 0.90), transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+    transition-delay: 0;
 }
 
 .box-text {
