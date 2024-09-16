@@ -137,9 +137,14 @@ body {
     position: absolute;
     top: 55px;
     left: 0;
+    opacity: 0;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
+}
+
+.active:hover::after{
+    opacity: 1;
 }
 
 .nav-link:hover {
