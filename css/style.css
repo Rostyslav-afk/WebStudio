@@ -80,7 +80,11 @@
         letter-spacing: 0.78px;
         margin-right: 93px;
     }
-
+    .header-logo:focus{
+        border: none;
+        outline: 3px solid var(--color-accent);
+        border-radius: 1px;
+    }
     .header-nav {
         margin-right: auto;
     }
@@ -118,7 +122,11 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0;
     }
-
+    .nav-link:focus{
+        border: none;
+        outline: 3px solid var(--color-accent);
+        border-radius: 1px;
+    }
     .active {
         color: var(--color-accent);
     }
@@ -187,7 +195,11 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0;
     }
-
+    .header-link:focus{
+        border: none;
+        outline: 3px solid var(--color-accent);
+        border-radius: 1px;
+    }
     .header-item:hover {
         .header-link {
             color: var(--color-accent);
@@ -246,6 +258,11 @@
         padding-left: 32px;
     }
 
+    .hero-button:focus{
+        border: none;
+        outline: 3px solid var(--comand-svg);
+        border-radius: 1px;
+    }
 
     /* Advantages */
 
@@ -460,7 +477,11 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0;
     }
-
+    .comand-lenk:focus{
+        border: none;
+        outline: 3px solid var(--color-accent);
+        border-radius: 50%;
+    }
     .comand-lenk:hover {
         background-color: var(--color-accent);
 
@@ -515,7 +536,11 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0;
     }
-
+    .clients-link:focus{
+        border: none;
+        outline: 3px solid var(--color-accent);
+        border-radius: 1px;
+    }
     .clients-item:hover {
         border: 1px solid var(--color-accent);
 
@@ -557,7 +582,11 @@
         letter-spacing: 0.78px;
         margin-bottom: 20px;
     }
-
+    .footer-logo:focus{
+        border: none;
+        outline: 3px solid var(--color-accent);
+        border-radius: 1px;
+    }
     .footer-span {
         color: var(--color-accent);
         font-family: Raleway;
@@ -584,7 +613,11 @@
         letter-spacing: 0.42px;
 
     }
-
+    .address-link:focus{
+        border: none;
+        outline: 3px solid var(--color-accent);
+        border-radius: 1px;
+    }
     .adres-list {
         margin-top: 9px;
         /* display: flex;
@@ -606,7 +639,11 @@
         /* 171.429% */
         letter-spacing: 0.42px;
     }
-
+    .address-citation:focus{
+        border: none;
+        outline: 3px solid var(--color-accent);
+        border-radius: 1px;
+    }
     .footer-subtitle {
         color: var(--main-background);
         font-family: "Roboto";
@@ -635,7 +672,11 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0;
     }
-
+    .footer-social:focus{
+        border: none;
+        outline: 3px solid var(--color-accent);
+        border-radius: 50%;
+    }
     .footer-social:hover {
         background-color: var(--color-accent);
     }
@@ -683,7 +724,11 @@
         width: 358px;
         margin-right: 12px;
     }
-
+    .footer-input:focus{
+        border: none;
+        outline: 3px solid var(--color-accent);
+        border-radius: 1px;
+    }
     .footer-button {
         width: 200px;
         height: 50px;
@@ -703,7 +748,11 @@
         justify-content: center;
         gap: 10px;
     }
-
+    .footer-button:focus{
+        border: none;
+        outline: 3px solid var(--comand-svg);
+        border-radius: 1px;
+    }
     .footer-svgg {
         width: 24px;
         height: 24px;
