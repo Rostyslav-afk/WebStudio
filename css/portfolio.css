@@ -169,12 +169,19 @@ body {
     fill: var(--description-color);
     width: 16px;
     height: 12px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 
 .header-item:nth-child(2) .header-svg {
     width: 10px;
     height: 16px;
 }
+
+.header-item {}
 
 .header-link {
     color: var(--description-color);
@@ -187,6 +194,10 @@ body {
     align-items: center;
     gap: 10px;
 
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 .header-link:focus{
     border: none;
@@ -202,7 +213,6 @@ body {
         fill: var(--color-accent);
     }
 }
-
 .header-line {
     width: 1600px;
     height: 1px;
@@ -329,8 +339,7 @@ body {
     top: 0;
     opacity: 0;
     padding: 63px 24px;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0 ;
-
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0;
     overflow: hidden;
 }
 
