@@ -273,7 +273,7 @@
 
     .hero-button:focus {
         border: none;
-        outline: 3px solid var(--comand-svg);
+        outline: 3px solid var(--color-accent);
         border-radius: 1px;
     }
 

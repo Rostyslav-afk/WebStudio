@@ -89,7 +89,8 @@ body {
     border: none;
     outline: 3px solid var(--color-accent);
     border-radius: 1px;
-
+    background: none;
+    color: var(--color-accent);
 }
 
 .header-nav {
@@ -134,7 +135,8 @@ body {
     border: none;
     outline: 3px solid var(--color-accent);
     border-radius: 1px;
-
+    background: none;
+    color: var(--color-accent);
 }
 
 .active {
@@ -210,6 +212,11 @@ body {
     border: none;
     outline: 3px solid var(--color-accent);
     border-radius: 1px;
+    color: var(--color-accent);
+    background: none;
+    .header-svg{
+        fill: var(--color-accent);
+    }
 }
 
 .header-item:hover {
@@ -405,6 +412,8 @@ body {
     border: none;
     outline: 3px solid var(--color-accent);
     border-radius: 1px;
+    background: none;
+    
 }
 
 .footer-span {
@@ -437,6 +446,7 @@ body {
     border: none;
     outline: 3px solid var(--color-accent);
     border-radius: 1px;
+    background: none;
 }
 
 .adres-list {
@@ -465,6 +475,7 @@ body {
     border: none;
     outline: 3px solid var(--color-accent);
     border-radius: 1px;
+    background: none;
 }
 
 .footer-boxx {
