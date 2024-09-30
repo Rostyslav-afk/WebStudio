@@ -1,15 +1,4 @@
-:root {
-    --color-accent: #2196F3;
-    --text-color: #212121;
-    --description-color: #757575;
-    --main-background: #fff;
-    --main-team: #F5F4FA;
-    --footer-background: #2F303A;
-    --header-text: #000;
-    --footer-number: rgba(255, 255, 255, 0.6);
-    --card-item: #EEE;
-    --comand-svg: #AFB1B8;
-}
+
 
 *,
 *::before,
