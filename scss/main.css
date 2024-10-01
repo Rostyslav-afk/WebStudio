@@ -54,7 +54,7 @@ img {
 }
 
 .header {
-  padding-top: 24px;
+  padding-top: 25px;
   padding-bottom: 25px;
 }
 
@@ -136,13 +136,14 @@ img {
   color: var(--color-accent);
 }
 
-.active {
+.active{
   color: var(--color-accent);
 }
 
 .active::after {
   content: "";
   display: block;
+  opacity: 0;
   border-radius: 2px;
   background-color: var(--color-accent);
   width: 100%;
@@ -150,7 +151,6 @@ img {
   position: absolute;
   top: 47px;
   left: 0;
-  opacity: 0;
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -980,18 +980,25 @@ img {
   position: absolute;
   top: 16px;
   right: 16px;
+  background: none;
 }
 
 .form-close:hover .close,
-.form-close:focus .close {
+.form-close, .close:focus {
   fill: var(--color-accent);
   cursor: pointer;
+  background: none;
+  border-radius: 50%;
 }
-
+.form-close:focus{
+  background: none;
+  border-radius: 50%;
+}
 .close {
   width: 11px;
   height: 11px;
   fill: var(--header-text);
+  background: none;
 }
 /* Portfolio header */
 .header {
@@ -1071,11 +1078,11 @@ img {
   color: var(--color-accent);
 }
 
-.active {
+.activee {
   color: var(--color-accent);
 }
 
-.active::after {
+.activee::after {
   content: "";
   display: block;
   border-radius: 2px;
@@ -1091,7 +1098,7 @@ img {
   transition-delay: 0;
 }
 
-.active:hover::after {
+.activee:hover::after {
   opacity: 1;
 }
 
