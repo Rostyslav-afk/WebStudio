@@ -532,26 +532,14 @@ img {
   justify-content: space-between;
 }
 
-.clients-item:hover,
-:focus {
-  border: none;
-  outline: 2px solid var(--color-accent);
-  border-radius: 1px;
-  background: none;
-}
-.clients-item:hover .clients-link,
-:focus  {
+.clients-link:hover, .clients-link:focus{
   border-color: var(--color-accent);
-  background: none;
+background: none;
+  .clients-svg{
+    fill: var(--color-accent);
+  }
 }
-.clients-item:hover .clients-svg,
-:focus  {
-  fill: var(--color-accent);
-  background: none;
-}
-.clients-link:focus{
-  background: none;
-}
+
 .clients-link {
   border-radius: 4px;
   border: 1px solid #afb1b8;
