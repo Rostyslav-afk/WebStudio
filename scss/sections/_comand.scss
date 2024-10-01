@@ -1,0 +1,115 @@
+.comand {
+    background: var(--main-team);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+}
+
+.comand-title {
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.comand-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.comand-item {
+    width: 270px;
+    /* height: 368px; */
+    border: 1px;
+    background: #FFF;
+    flex-basis: calc((100% - 60px) / 3);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+}
+
+.comand-img {
+    width: 100%;
+}
+
+.comand-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.comand-subtitle {
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.48px;
+    /* margin-top: 30px; */
+    text-align: center;
+}
+
+.comand-text {
+    color: var(--description-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.48px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.comand-lest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.comand-lenk {
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+}
+
+.comand-lenk:focus {
+    border: none;
+    outline: 3px solid var(--color-accent);
+    border-radius: 50%;
+    background-color: var(--color-accent);
+
+    .comand-svg {
+        fill: var(--main-background);
+    }
+
+}
+
+.comand-lenk:hover {
+    background-color: var(--color-accent);
+
+    .comand-svg {
+        fill: var(--main-background);
+    }
+}
+
+.comand-svg {
+    fill: var(--comand-svg);
+    width: 20px;
+    height: 20px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+}
