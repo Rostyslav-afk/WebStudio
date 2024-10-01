@@ -1222,7 +1222,7 @@ background: none;
   background: var(--main-background);
   text-align: left;
   overflow: hidden;
-  z-index: 3;
+  z-index: 2;
   position: relative;
   overflow: hidden;
 }
@@ -1255,7 +1255,7 @@ background: none;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
-  z-index: 2;
+  z-index: 1;
   
 }
 
