@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    &-title {
+    &__title {
         color: $main-background;
         text-align: center;
         font-family: "Roboto", sans-serif;
@@ -21,7 +21,7 @@
         margin: 0 auto 30px;
     }
 
-    &-button {
+    &__button {
         background: $color-accent;
         border-radius: 4px;
         border: $color-accent;
