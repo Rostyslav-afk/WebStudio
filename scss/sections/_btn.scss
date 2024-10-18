@@ -2,45 +2,45 @@
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
-}
 
-.btn-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 
-.btn-item {
-    margin-right: 8px;
-}
+    &__item {
+        margin-right: 8px;
+    }
 
-.btn-btn {
-    background-color: var(--main-team);
-    color: var(--text-color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.48px;
-    padding: 6px 22px;
-    border: 0;
-    border-radius: 5px;
+    &__btn {
+        background-color: $main-team;
+        color: $text-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.62;
+        letter-spacing: 0.48px;
+        padding: 6px 22px;
+        border: 0;
+        border-radius: 5px;
 
-    transition-property: var(--color-accent);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    ;
-    transition-delay: 0;
-}
+        transition-property: $color-accent;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        ;
+        transition-delay: 0;
 
-.btn-btn:hover,
-:focus {
-    background: var(--color-accent);
-    border: none;
-    color: var(--main-background);
-    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-    outline: 3px solid var(--color-accent);
-    border-radius: 1px;
-    transition-property: none;
+        &:hover,
+        :focus {
+            background: $color-accent;
+            border: none;
+            color: $main-background;
+            box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+            outline: 3px solid $color-accent;
+            border-radius: 1px;
+            transition-property: none;
 
+        }
+    }
 }

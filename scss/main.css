@@ -794,6 +794,8 @@ img {
   border: none;
   outline: 3px solid #AFB1B8;
   border-radius: 1px;
+  background: #2196F3;
+  color: #fff;
 }
 .modal .form__close {
   border-radius: 50%;
@@ -823,18 +825,8 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-
-.box {
-  display: flex;
-  align-items: center;
-}
-
-.logo-span {
-  color: var(--color-accent);
-}
-
-.header-logo {
-  color: var(--color-accent);
+.header__logo {
+  color: #2196F3;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -842,111 +834,51 @@ img {
   letter-spacing: 0.78px;
   margin-right: 93px;
 }
-
-.header-logo:focus {
-  border: none;
-  outline: 3px solid var(--color-accent);
-  border-radius: 1px;
-  background: none;
-  color: var(--color-accent);
-}
-
-.header-nav {
-  margin-right: auto;
-}
-
-.nav-list {
-  display: flex;
-  gap: 50px;
-}
-
-.header-list {
-  display: flex;
-  gap: 50px;
-}
-
-.logo-span {
-  color: var(--header-text);
+.header__logo .logo__span {
+  color: #000;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
 }
-
-.nav-link {
-  color: var(--text-color);
+.header__logo:focus {
+  border: none;
+  outline: 3px solid #2196F3;
+  border-radius: 1px;
+}
+.header__nav {
+  margin-right: auto;
+}
+.header__nav .nav__list {
+  display: flex;
+  gap: 50px;
+}
+.header__nav .nav__link {
+  color: #212121;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
   position: relative;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav-link:focus {
+.header__nav .nav__link:focus {
   border: none;
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid #2196F3;
   border-radius: 1px;
-  background: none;
-  color: var(--color-accent);
+  color: #2196F3;
 }
-
-.active {
-  color: var(--color-accent);
+.header__nav .nav__link:hover {
+  color: #2196F3;
 }
-
-.active::after {
-  content: "";
-  display: block;
-  border-radius: 2px;
-  background-color: var(--color-accent);
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  top: 55px;
-  left: 0;
-  opacity: 0;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+.header__list {
+  display: flex;
+  gap: 50px;
 }
-
-.active:hover::after {
-  opacity: 1;
-}
-
-.nav-link:hover {
-  color: var(--color-accent);
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-}
-
-.header-svg {
-  fill: var(--description-color);
-  width: 16px;
-  height: 12px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-}
-
-.header-item:nth-child(2) .header-svg {
-  width: 10px;
-  height: 16px;
-}
-
-.header-link {
-  color: var(--description-color);
-  font-family: "Roboto", sans-serif;
+.header__list .header__item .header__link {
+  color: #757575;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -954,31 +886,64 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.header__list .header__item .header__link:focus {
+  border: none;
+  outline: 3px solid #2196F3;
+  border-radius: 1px;
+  color: #2196F3;
+}
+.header__list .header__item .header__link:focus .header__svg {
+  fill: #2196F3;
+}
+.header__list .header__item .header__link:hover, .header__list .header__item .header__link:focus {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
+  color: #2196F3;
 }
-
-.header-link:focus {
-  border: none;
-  outline: 3px solid var(--color-accent);
-  border-radius: 1px;
-  color: var(--color-accent);
-  background: none;
+.header__list .header__item .header__link:hover .header__svg, .header__list .header__item .header__link:focus .header__svg {
+  fill: #2196F3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
-.header-link:focus .header-svg {
-  fill: var(--color-accent);
+.header__list .header__item .header__svg {
+  fill: #757575;
+  width: 16px;
+  height: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-item:hover .header-link {
-  color: var(--color-accent);
+.header__list .header__svg:nth-child(2) {
+  width: 10px;
+  height: 16px;
 }
-.header-item:hover .header-svg {
-  fill: var(--color-accent);
+.header .box {
+  display: flex;
+  align-items: center;
 }
-
-.header-line {
+.header .activee {
+  color: #2196F3;
+}
+.header .activee::after {
+  content: "";
+  display: block;
+  border-radius: 2px;
+  background-color: #2196F3;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header .activee:hover::after {
+  opacity: 1;
+}
+.header__line {
   width: 1600px;
   height: 1px;
   background: #ECECEC;
@@ -990,20 +955,17 @@ img {
   padding-bottom: 94px;
   text-align: center;
 }
-
-.btn-list {
+.btn__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-
-.btn-item {
+.btn__item {
   margin-right: 8px;
 }
-
-.btn-btn {
-  background-color: var(--main-team);
-  color: var(--text-color);
+.btn__btn {
+  background-color: #F5F4FA;
+  color: #212121;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -1012,19 +974,18 @@ img {
   padding: 6px 22px;
   border: 0;
   border-radius: 5px;
-  transition-property: var(--color-accent);
+  transition-property: #2196F3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-
-.btn-btn:hover,
-:focus {
-  background: var(--color-accent);
+.btn__btn:hover,
+.btn__btn :focus {
+  background: #2196F3;
   border: none;
-  color: var(--main-background);
+  color: #fff;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid #2196F3;
   border-radius: 1px;
   transition-property: none;
 }
