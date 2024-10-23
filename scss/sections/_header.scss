@@ -4,20 +4,12 @@
 
   &__logo {
     color: $color-accent;
-    font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.38;
-    letter-spacing: 0.78px;
+    @extend %font !optional;
     margin-right: 93px;
 
     .logo__span {
       color: $header-text;
-      font-family: "Raleway", sans-serif;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1.38;
-      letter-spacing: 0.78px;
+      @extend %font !optional;
     }
 
     &:focus {
@@ -38,10 +30,7 @@
     .nav__link {
       color: $text-color;
       font-family: "Roboto", sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1.14;
-      letter-spacing: 0.28px;
+      @extend %text !optional;
       position: relative;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -66,10 +55,7 @@
 
       .header__link {
         color: $description-color;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.28px;
+        @extend %text !optional;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -112,7 +98,7 @@
       }
     }
 
-    .header__svg:nth-child(2){
+    .header__svg:nth-child(2) {
       width: 10px;
       height: 16px;
     }
