@@ -6,10 +6,7 @@
     &__title {
         color: $text-color;
         text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.16;
-        letter-spacing: 1.08px;
+        @extend %clients !optional;
         margin-bottom: 50px;
     }
 

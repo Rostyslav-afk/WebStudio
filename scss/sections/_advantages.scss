@@ -43,19 +43,13 @@
     &__title {
         margin-bottom: 10px;
         color: $text-color;
-        font-family: "Roboto";
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.42px;
+        font-family: "Roboto", sans-serif;
+        @extend %accent !optional;
     }
 
     &__text {
         color: $description-color;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.71; // 171.429%
-        letter-spacing: 0.42px;
+        @extend %foonts !optional;
         width: 270px;
     }
 }
