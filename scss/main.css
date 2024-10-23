@@ -171,10 +171,6 @@ img {
   color: #fff;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
   padding: 10px 32px;
 }
 .hero__button:focus {
@@ -270,11 +266,6 @@ img {
 .work__text {
   color: #fff;
   text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
 }
 
 .comand {

@@ -44,12 +44,12 @@
         margin-bottom: 10px;
         color: $text-color;
         font-family: "Roboto", sans-serif;
-        @extend %accent !optional;
+        @extend %accent;
     }
 
     &__text {
         color: $description-color;
-        @extend %foonts !optional;
+        @extend %foonts;
         width: 270px;
     }
 }
