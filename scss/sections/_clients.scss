@@ -1,3 +1,5 @@
+@import '../utils/placeholder';
+@import '../utils/mixin';
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -6,7 +8,7 @@
     &__title {
         color: $text-color;
         text-align: center;
-        @extend %clients !optional;
+        @extend %clients;
         margin-bottom: 50px;
     }
 
@@ -35,9 +37,7 @@
         border-radius: 4px;
         border: 1px solid $comand-svg;
         padding: 16px 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-box($a: center, $b: center);
         transition-property: border-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

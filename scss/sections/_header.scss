@@ -1,15 +1,16 @@
+@import '../utils/placeholder';
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
 
   &__logo {
     color: $color-accent;
-    @extend %font !optional;
+    @extend %font;
     margin-right: 93px;
 
     .logo__span {
       color: $header-text;
-      @extend %font !optional;
+      @extend %font;
     }
 
     &:focus {
@@ -30,7 +31,7 @@
     .nav__link {
       color: $text-color;
       font-family: "Roboto", sans-serif;
-      @extend %text !optional;
+      @extend %text;
       position: relative;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -55,7 +56,7 @@
 
       .header__link {
         color: $description-color;
-        @extend %text !optional;
+        @extend %text;
         display: flex;
         align-items: center;
         gap: 10px;

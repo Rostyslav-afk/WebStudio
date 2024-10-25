@@ -1,3 +1,5 @@
+@import '../utils/placeholder';
+@import '../utils/mixin';
 .comand {
     background: $main-team;
     padding-top: 94px;
@@ -7,10 +9,7 @@
     &__title {
         color: $text-color;
         font-family: "Roboto", sans-serif;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.16;
-        letter-spacing: 1.08px;
+        @extend %clients;
         margin-bottom: 50px;
     }
 
@@ -63,9 +62,9 @@
     }
 
     &__lest {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
+        @include flex-box($a: center, $b: center, $c: flex-start, $d: flex-start);
         gap: 10px;
     }
 
@@ -75,7 +74,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    
+        
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -1,3 +1,4 @@
+@import '../utils/placeholder';
 .work {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -43,7 +44,7 @@
     &__text {
         color: $main-background;
         text-align: center;
-        @extend %accent !optional;
+        @extend %accent;
     }
 }
 
