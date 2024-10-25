@@ -1,3 +1,5 @@
+@import '../utils/placeholder';
+@import '../utils/mixin';
 .card {
 
 
@@ -30,20 +32,14 @@
         &:nth-child(2) {
             color: $text-color;
             font-family: Roboto;
-            font-size: 18px;
+            @extend %card;
             font-style: normal;
-            font-weight: 700;
-            line-height: 2;
-            letter-spacing: 1.08px;
         }
     }
 
     &__title {
         color: $text-color;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 2;
-        letter-spacing: 1.08px;
+        @extend %card;
     }
 
     &__text {
@@ -72,11 +68,7 @@
     .box__text {
         width: 100%;
         color: $main-background;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.54px;
-        text-align: left;
+        @extend %cards;
     }
 
     &__item:hover .item__box {
@@ -87,11 +79,7 @@
     .box__text {
         width: 100%;
         color: $main-background;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.54px;
-        text-align: left;
+        @extend %cards;
     }
 }
 

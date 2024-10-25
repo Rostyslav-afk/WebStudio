@@ -1,11 +1,13 @@
+@import '../utils/placeholder';
+@import '../utils/mixin';
 .btn {
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
 
     &__list {
-        display: flex;
-        justify-content: center;
+        @include flex-box($a: center, $b: center, $c: flex-start, $d: flex-start);
+
         margin-bottom: 50px;
     }
 
@@ -25,7 +27,7 @@
         border: 0;
         border-radius: 5px;
 
-        transition-property: $color-accent;
+        transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         ;
@@ -37,9 +39,8 @@
             border: none;
             color: $main-background;
             box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-            outline: 3px solid $color-accent;
-            border-radius: 1px;
-            transition-property: none;
+            border-radius: 5px;
+            
 
         }
     }
