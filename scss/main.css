@@ -41,7 +41,7 @@ img {
   padding-right: 15px;
 }
 
-.header__logo .logo__span, .header__logo {
+.footer__span, .footer .footer__logo, .header__logo .logo__span, .header__logo {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -56,7 +56,7 @@ img {
   letter-spacing: 0.28px;
 }
 
-.work__text, .advantages__title {
+.footer__title, .footer__subtitle, .work__text, .advantages__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -71,14 +71,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.advantages__text {
+.footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.hero__button {
+.footer__button, .hero__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -169,6 +169,9 @@ img {
 .header .box {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: flex-start;
+  flex-direction: flex-start;
 }
 .header .active {
   color: #2196F3;
@@ -190,7 +193,7 @@ img {
   opacity: 1;
 }
 
-.header__logo, .header__logo .logo__span {
+.footer__span, .footer .footer__logo, .header__logo, .header__logo .logo__span {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -205,7 +208,7 @@ img {
   letter-spacing: 0.28px;
 }
 
-.work__text, .advantages__title {
+.footer__title, .footer__subtitle, .work__text, .advantages__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -220,14 +223,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.advantages__text {
+.footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.hero__button {
+.footer__button, .hero__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -318,7 +321,7 @@ img {
   width: 270px;
 }
 
-.header__logo, .header__logo .logo__span {
+.footer__span, .footer .footer__logo, .header__logo, .header__logo .logo__span {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -333,7 +336,7 @@ img {
   letter-spacing: 0.28px;
 }
 
-.work__text, .advantages__title {
+.footer__title, .footer__subtitle, .work__text, .advantages__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -348,14 +351,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.advantages__text {
+.footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.hero__button {
+.footer__button, .hero__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -403,7 +406,7 @@ img {
   text-align: center;
 }
 
-.header__logo, .header__logo .logo__span {
+.footer__span, .footer .footer__logo, .header__logo, .header__logo .logo__span {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -418,7 +421,7 @@ img {
   letter-spacing: 0.28px;
 }
 
-.advantages__title, .work__text {
+.footer__title, .footer__subtitle, .advantages__title, .work__text {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -433,14 +436,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.advantages__text {
+.footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.hero__button {
+.footer__button, .hero__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -543,7 +546,7 @@ img {
   transition-delay: 0;
 }
 
-.header__logo, .header__logo .logo__span {
+.footer__span, .footer .footer__logo, .header__logo, .header__logo .logo__span {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -558,7 +561,7 @@ img {
   letter-spacing: 0.28px;
 }
 
-.advantages__title, .work__text {
+.footer__title, .footer__subtitle, .advantages__title, .work__text {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -573,14 +576,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.advantages__text {
+.footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.hero__button {
+.footer__button, .hero__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -637,6 +640,50 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer__span, .footer .footer__logo, .header__logo, .header__logo .logo__span {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+}
+
+.header__nav .nav__link, .header__list .header__item .header__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+}
+
+.footer__title, .footer__subtitle, .advantages__title, .work__text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.comand__title, .clients__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 1.08px;
+}
+
+.footer .address__link, .advantages__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+.footer__button, .hero__button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+}
+
 .footer {
   background: #2F303A;
   padding-top: 60px;
@@ -652,11 +699,6 @@ img {
 }
 .footer .footer__logo {
   color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.38;
-  letter-spacing: 0.78px;
   margin-bottom: 20px;
 }
 .footer .footer__logo:focus {
@@ -666,11 +708,6 @@ img {
 }
 .footer__span {
   color: #2196F3;
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.38;
-  letter-spacing: 0.78px;
 }
 .footer .address {
   margin-top: 20px;
@@ -679,10 +716,6 @@ img {
 .footer .address__link {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
 }
 .footer .address__link:focus {
   border: none;
@@ -691,7 +724,10 @@ img {
 }
 .footer .address__list {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: flex-start;
   gap: 9px;
   margin-top: 9px;
 }
@@ -718,10 +754,6 @@ img {
 .footer__subtitle {
   color: #fff;
   font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
   margin-bottom: 20px;
 }
 .footer__list {
@@ -731,8 +763,10 @@ img {
 .footer__social {
   padding: 12px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-wrap: flex-start;
+  flex-direction: flex-start;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
@@ -758,11 +792,6 @@ img {
 }
 .footer__title {
   color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -796,10 +825,6 @@ img {
   background-color: #2196F3;
   padding: 10px 28px;
   text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
@@ -1005,26 +1030,60 @@ img {
   fill: #000;
 }
 
+.header__logo, .header__logo .logo__span, .footer .footer__logo, .footer__span {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+}
+
+.header__nav .nav__link, .header__list .header__item .header__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+}
+
+.advantages__title, .work__text, .footer__subtitle, .footer__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.comand__title, .clients__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 1.08px;
+}
+
+.advantages__text, .footer .address__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+.hero__button, .footer__button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
 .header__logo {
   color: #2196F3;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.38;
-  letter-spacing: 0.78px;
   margin-right: 93px;
 }
 .header__logo .logo__span {
   color: #000;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.38;
-  letter-spacing: 0.78px;
 }
 .header__logo:focus {
   border: none;
@@ -1041,10 +1100,6 @@ img {
 .header__nav .nav__link {
   color: #212121;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1063,10 +1118,6 @@ img {
 }
 .header__list .header__item .header__link {
   color: #757575;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1107,6 +1158,9 @@ img {
 .header .box {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: flex-start;
+  flex-direction: flex-start;
 }
 .header .activee {
   color: #2196F3;
