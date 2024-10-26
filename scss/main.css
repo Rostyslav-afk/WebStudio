@@ -71,14 +71,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.footer .address__link, .advantages__text {
+.modal__span, .modal__text, .footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.footer__button, .hero__button {
+.modal__button, .footer__button, .hero__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -238,14 +238,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.footer .address__link, .advantages__text {
+.modal__span, .modal__text, .footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.footer__button, .hero__button {
+.modal__button, .footer__button, .hero__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -381,14 +381,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.footer .address__link, .advantages__text {
+.modal__span, .modal__text, .footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.footer__button, .hero__button {
+.modal__button, .footer__button, .hero__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -481,14 +481,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.footer .address__link, .advantages__text {
+.modal__span, .modal__text, .footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.footer__button, .hero__button {
+.modal__button, .footer__button, .hero__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -636,14 +636,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.footer .address__link, .advantages__text {
+.modal__span, .modal__text, .footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.footer__button, .hero__button {
+.modal__button, .footer__button, .hero__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -745,14 +745,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.footer .address__link, .advantages__text {
+.modal__span, .modal__text, .footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.footer__button, .hero__button {
+.modal__button, .footer__button, .hero__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -935,6 +935,65 @@ img {
   fill: #fff;
 }
 
+.header__logo, .header__logo .logo__span, .footer .footer__logo, .footer__span {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+}
+
+.header__nav .nav__link, .header__list .header__item .header__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+}
+
+.advantages__title, .work__text, .footer__subtitle, .footer__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.comand__title, .clients__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 1.08px;
+}
+
+.modal__span, .modal__text, .advantages__text, .footer .address__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+.modal__button, .hero__button, .footer__button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+}
+
+.card__title, .card__box:nth-child(2) {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
+}
+
+.card .box__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.54px;
+  text-align: left;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -1030,6 +1089,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: flex-start;
+  flex-direction: flex-start;
 }
 .modal__checkbox {
   width: 16px;
@@ -1042,18 +1103,10 @@ img {
 }
 .modal__text {
   color: #757575;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
   margin-left: 8px;
 }
 .modal__span {
   color: #2196F3;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.17;
-  letter-spacing: 0.42px;
   text-decoration-line: underline;
   margin-left: 5px;
   cursor: pointer;
@@ -1075,10 +1128,6 @@ img {
 .modal__button {
   color: #fff;
   text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
   border: none;
   border-radius: 4px;
   background: #2196F3;
@@ -1150,14 +1199,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.advantages__text, .footer .address__link {
+.advantages__text, .footer .address__link, .modal__text, .modal__span {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.hero__button, .footer__button {
+.hero__button, .footer__button, .modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -1323,14 +1372,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.advantages__text, .footer .address__link {
+.advantages__text, .footer .address__link, .modal__text, .modal__span {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.hero__button, .footer__button {
+.hero__button, .footer__button, .modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -1423,14 +1472,14 @@ img {
   letter-spacing: 1.08px;
 }
 
-.advantages__text, .footer .address__link {
+.advantages__text, .footer .address__link, .modal__text, .modal__span {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-.hero__button, .footer__button {
+.hero__button, .footer__button, .modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
