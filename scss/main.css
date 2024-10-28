@@ -119,6 +119,20 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+@media screen and (min-width: 480px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
 .header__logo {
   color: #2196F3;
   margin-right: 93px;

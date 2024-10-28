@@ -1,8 +1,34 @@
+// @media screen and (min-width: 480px) {
+
+// }
+// @media screen and (min-width: 768px) {
+
+// }
+// @media screen and (min-width: 1200px) {
+
+// }
+
 @import '../utils/placeholder';
 @import '../utils/mixin';
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {}
 
   &__logo {
     color: $color-accent;
