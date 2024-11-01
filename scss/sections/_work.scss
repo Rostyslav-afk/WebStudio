@@ -1,8 +1,14 @@
 @import '../utils/placeholder';
+
 .work {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    text-align: center;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        text-align: center;
+        display: block;
+    }
 
     &__title {
         color: $text-color;
@@ -13,12 +19,12 @@
         letter-spacing: 1.08px;
         margin-bottom: 50px;
     }
-    
+
     &__list {
         display: flex;
         gap: 30px;
         flex-grow: 2;
-    
+
     }
 
     &__item {
@@ -47,15 +53,3 @@
         @extend %accent;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

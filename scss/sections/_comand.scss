@@ -1,16 +1,32 @@
 @import '../utils/placeholder';
 @import '../utils/mixin';
+
 .comand {
     background: $main-team;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        text-align: center;
+    }
 
     &__title {
         color: $text-color;
         font-family: "Roboto", sans-serif;
-        @extend %clients;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0.84px;
         margin-bottom: 50px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.16;
+            letter-spacing: 1.08px;
+        }
     }
 
     &__list {
@@ -24,18 +40,25 @@
         /* height: 368px; */
         border: 1px;
         background: $main-background;
-        flex-basis: calc((100% - 60px) / 3);
+        flex-basis: calc(100%);
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px) / 2);
+          }
+          @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 90px) / 4);
+          }
     }
 
     &__img {
         width: 100%;
     }
-    
+
     &__box {
         padding-top: 30px;
         padding-bottom: 30px;
-    
+
     }
 
     &__subtitle {
@@ -48,7 +71,7 @@
         /* margin-top: 30px; */
         text-align: center;
     }
-    
+
     &__text {
         color: $description-color;
         font-family: "Roboto", sans-serif;
@@ -74,51 +97,41 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0;
+
         &:focus {
             border: none;
             outline: 3px solid $color-accent;
             border-radius: 50%;
             background-color: $color-accent;
-        
+
             .comand__svg {
                 fill: $main-background;
             }
-        
+
         }
 
         &:hover {
             background-color: $color-accent;
-        
+
             .comand__svg {
                 fill: $main-background;
             }
         }
     }
-    
+
     &__svg {
         fill: $comand-svg;
         width: 20px;
         height: 20px;
-    
+
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
