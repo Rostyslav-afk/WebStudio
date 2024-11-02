@@ -1,5 +1,6 @@
 @import '../utils/placeholder';
 @import '../utils/mixin';
+
 .footer {
     background: $footer-background;
     padding-top: 60px;
@@ -8,17 +9,41 @@
     &>.container {
         display: flex;
         align-items: first baseline;
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+        align-items: center;
+
+        @media screen and (min-width:480px) {}
+
+        @media screen and (min-width:768px) {
+            flex-direction: row;
+        }
+
+        @media screen and (min-width:1200px) {}
     }
 
     &__wrapper {
         width: 235px;
         margin-right: 70px;
+        text-align: center;
     }
 
     .footer__logo {
         color: $main-background;
-        @extend %font;
+        font-family: "Raleway";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.72px;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 1.38;
+            letter-spacing: 0.78px;
+        }
 
         &:focus {
             border: none;
@@ -40,7 +65,7 @@
             color: $main-background;
             font-family: "Roboto", sans-serif;
             @extend %foonts;
-        
+
             &:focus {
                 border: none;
                 outline: 3px solid $color-accent;
@@ -49,16 +74,17 @@
         }
 
         &__list {
-            @include flex-box( $d: flex-start);
+            @include flex-box($d: flex-start);
             gap: 9px;
             margin-top: 9px;
+
         }
-        
+
         &__item:nth-child(1) {
             margin-bottom: 9px;
-        
+
         }
-        
+
         &__citation {
             color: $footer-number;
             font-family: "Roboto", sans-serif;
@@ -75,17 +101,35 @@
             }
         }
     }
-    &__boxx{
-        margin-right: 93px;
+
+    &__boxx {
+
+        @media screen and (min-width:480px) {}
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {
+            margin-left: 70px;
+        }
+
     }
 
     &__subtitle {
         color: $main-background;
         font-family: "Roboto";
-        @extend %accent;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
         margin-bottom: 20px;
+
+
+        @media screen and (min-width: 1200px) {
+            line-height: 1.14;
+        }
     }
-    
+
     &__list {
         display: flex;
         gap: 10px;
@@ -106,7 +150,7 @@
             border-radius: 50%;
             background-color: $color-accent;
         }
-        
+
         &:hover {
             background-color: $color-accent;
         }
@@ -121,9 +165,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__bboxx{
 
-    }
 
     &__title {
         color: $main-background;
@@ -131,11 +173,21 @@
         margin-bottom: 20px;
         display: inline-block;
     }
-    
+
     &__form {
         display: flex;
         align-items: center;
         gap: 12px;
+        flex-direction: column;
+        @media screen and (min-width:480px){
+          
+        }
+        @media screen and (min-width:768px){
+          
+        }
+        @media screen and (min-width:1200px){
+          flex-direction: row;
+        }
     }
 
     &__input {
@@ -151,15 +203,24 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         background: rgba(33, 150, 243, 0);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        width: 358px;
+        width: 100%;
 
+        @media screen and (min-width:480px){
+            width: 450px
+          }
+          @media screen and (min-width:768px){
+            width: 450px
+          }
+          @media screen and (min-width:1200px){
+            width: 358px;
+          }
         &:focus {
             border: none;
             outline: 3px solid $color-accent;
             border-radius: 1px;
         }
     }
-    
+
     &__button {
         color: $main-background;
         background-color: $color-accent;
@@ -181,11 +242,11 @@
             color: $main-background;
         }
     }
-    
+
     &__svgg {
         width: 24px;
         height: 24px;
         fill: $main-background;
-    
+
     }
 }
