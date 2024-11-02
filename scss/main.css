@@ -78,13 +78,6 @@ img {
   text-transform: uppercase;
 }
 
-.clients__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
-}
-
 .modal__span, .modal__text, .footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
@@ -317,13 +310,6 @@ img {
   text-transform: uppercase;
 }
 
-.clients__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
-}
-
 .modal__span, .modal__text, .footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
@@ -524,13 +510,6 @@ img {
   text-transform: uppercase;
 }
 
-.clients__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
-}
-
 .modal__span, .modal__text, .footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
@@ -630,13 +609,6 @@ img {
   text-transform: uppercase;
 }
 
-.clients__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
-}
-
 .modal__span, .modal__text, .footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
@@ -699,10 +671,16 @@ img {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .comand__list {
+    flex-wrap: nowrap;
+  }
 }
 .comand__item {
-  width: 270px;
-  /* height: 368px; */
+  width: 450px;
+  /* height: 622px; */
   border: 1px;
   background: #fff;
   flex-basis: 100%;
@@ -711,11 +689,13 @@ img {
 @media screen and (min-width: 768px) {
   .comand__item {
     flex-basis: calc((100% - 30px) / 2);
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .comand__item {
     flex-basis: calc((100% - 90px) / 4);
+    width: 270px;
   }
 }
 .comand__img {
@@ -723,28 +703,43 @@ img {
 }
 .comand__box {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .comand__box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 .comand__subtitle {
   color: #212121;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.18;
+  line-height: normal;
   letter-spacing: 0.48px;
-  /* margin-top: 30px; */
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .comand__subtitle {
+    line-height: 1.18;
+  }
 }
 .comand__text {
   color: #757575;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.18;
+  line-height: normal;
   letter-spacing: 0.48px;
   margin-top: 10px;
   text-align: center;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .comand__text {
+    line-height: 1.18;
+  }
 }
 .comand__lest {
   display: flex;
@@ -813,13 +808,6 @@ img {
   text-transform: uppercase;
 }
 
-.clients__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
-}
-
 .modal__span, .modal__text, .footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
@@ -850,18 +838,62 @@ img {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__title {
   color: #212121;
   text-align: center;
-  margin-bottom: 50px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+  }
 }
 .clients__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .clients__list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+.clients__item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 .clients__item:hover,
 .clients :focus {
@@ -880,7 +912,8 @@ img {
 .clients__link {
   border-radius: 4px;
   border: 1px solid #AFB1B8;
-  padding: 16px 32px;
+  height: 92px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -889,6 +922,16 @@ img {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__svg {
   width: 106px;
@@ -920,13 +963,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-}
-
-.clients__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
 }
 
 .modal__span, .modal__text, .footer .address__link, .advantages__text {
@@ -1140,13 +1176,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-}
-
-.clients__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
 }
 
 .modal__span, .modal__text, .advantages__text, .footer .address__link {
@@ -1376,13 +1405,6 @@ img {
   text-transform: uppercase;
 }
 
-.clients__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
-}
-
 .advantages__text, .footer .address__link, .modal__text, .modal__span {
   font-size: 14px;
   font-weight: 400;
@@ -1614,13 +1636,6 @@ img {
   text-transform: uppercase;
 }
 
-.clients__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
-}
-
 .advantages__text, .footer .address__link, .modal__text, .modal__span {
   font-size: 14px;
   font-weight: 400;
@@ -1712,13 +1727,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-}
-
-.clients__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
 }
 
 .advantages__text, .footer .address__link, .modal__text, .modal__span {
