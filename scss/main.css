@@ -33,6 +33,7 @@ img {
 }
 
 .container {
+  outline: 1px solid red;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -85,7 +86,7 @@ img {
   letter-spacing: 0.42px;
 }
 
-.modal__button, .footer__button {
+.modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -317,7 +318,7 @@ img {
   letter-spacing: 0.42px;
 }
 
-.modal__button, .footer__button {
+.modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -517,7 +518,7 @@ img {
   letter-spacing: 0.42px;
 }
 
-.modal__button, .footer__button {
+.modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -616,7 +617,7 @@ img {
   letter-spacing: 0.42px;
 }
 
-.modal__button, .footer__button {
+.modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -815,7 +816,7 @@ img {
   letter-spacing: 0.42px;
 }
 
-.modal__button, .footer__button {
+.modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -972,7 +973,7 @@ img {
   letter-spacing: 0.42px;
 }
 
-.modal__button, .footer__button {
+.modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -1001,21 +1002,37 @@ img {
 }
 .footer > .container {
   display: flex;
-  align-items: first baseline;
   flex-direction: column;
   text-align: center;
-  gap: 60px;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer > .container {
+    align-items: first baseline;
     flex-direction: row;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer > .container {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
 .footer__wrapper {
-  width: 235px;
-  margin-right: 70px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    width: 235px;
+  }
 }
 .footer .footer__logo {
   color: #fff;
@@ -1043,12 +1060,13 @@ img {
   color: #2196F3;
 }
 .footer .address {
-  margin-top: 20px;
   font-style: normal;
+  margin-top: 20px;
 }
 .footer .address__link {
   color: #fff;
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 .footer .address__link:focus {
   border: none;
@@ -1081,6 +1099,11 @@ img {
   outline: 3px solid #2196F3;
   border-radius: 1px;
 }
+@media screen and (min-width: 768px) {
+  .footer__boxx {
+    margin-left: 165px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__boxx {
     margin-left: 70px;
@@ -1103,29 +1126,9 @@ img {
 }
 .footer__list {
   display: flex;
-  gap: 10px;
-}
-.footer__social {
-  padding: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: flex-start;
-  flex-direction: flex-start;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__social:focus {
-  border: none;
-  outline: 3px solid #2196F3;
-  border-radius: 50%;
-  background-color: #2196F3;
-}
-.footer__social:hover {
-  background-color: #2196F3;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 9px;
 }
 .footer__svg {
   width: 20px;
@@ -1140,15 +1143,26 @@ img {
   margin-bottom: 20px;
   display: inline-block;
 }
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__bboxx {
+    margin-left: auto;
+  }
+}
 .footer__form {
   display: flex;
   align-items: center;
-  gap: 12px;
   flex-direction: column;
+  gap: 20px;
 }
 @media screen and (min-width: 1200px) {
   .footer__form {
     flex-direction: row;
+    gap: 12px;
   }
 }
 .footer__input {
@@ -1171,11 +1185,6 @@ img {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
-  .footer__input {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__input {
     width: 358px;
@@ -1189,14 +1198,23 @@ img {
 .footer__button {
   color: #fff;
   background-color: #2196F3;
-  padding: 10px 28px;
+  padding: 10px 31px;
   text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
   display: flex;
   align-items: center;
   gap: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__button {
+    padding: 10px 28px;
+  }
 }
 .footer__button:focus {
   border: none;
@@ -1209,6 +1227,28 @@ img {
   width: 24px;
   height: 24px;
   fill: #fff;
+}
+
+.footer__social {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__social:focus {
+  border: none;
+  outline: 3px solid #2196F3;
+  border-radius: 50%;
+  background-color: #2196F3;
+}
+.footer__social:hover {
+  background-color: #2196F3;
 }
 
 .footer__span {
@@ -1241,7 +1281,7 @@ img {
   letter-spacing: 0.42px;
 }
 
-.modal__button, .footer__button {
+.modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -1468,7 +1508,7 @@ img {
   letter-spacing: 0.42px;
 }
 
-.footer__button, .modal__button {
+.modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -1699,7 +1739,7 @@ img {
   letter-spacing: 0.42px;
 }
 
-.footer__button, .modal__button {
+.modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -1722,9 +1762,8 @@ img {
 }
 
 .btn {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 .btn__list {
   display: flex;
@@ -1733,6 +1772,11 @@ img {
   flex-wrap: flex-start;
   flex-direction: flex-start;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .btn__list {
+    flex-wrap: nowrap;
+  }
 }
 .btn__item {
   margin-right: 8px;
@@ -1792,7 +1836,7 @@ img {
   letter-spacing: 0.42px;
 }
 
-.footer__button, .modal__button {
+.modal__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
