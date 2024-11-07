@@ -25,8 +25,12 @@
         line-height: 1.61; // 136.364%
         letter-spacing: 1.56px;
         text-transform: uppercase;
-        width: 360px;
+        width: 100%;
         margin: 0 auto 30px;
+
+        @media screen and (min-width: 480px) {
+            width: 360px;
+        }
 
         @media screen and (min-width: 1200px) {
             font-size: 44px;

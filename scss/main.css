@@ -35,10 +35,9 @@ img {
 .container {
   outline: 1px solid red;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -224,6 +223,7 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: "Roboto";
 }
 .header__list .header__item .header__link:focus {
   border: none;
@@ -260,13 +260,49 @@ img {
 }
 .header__list .header__item .header__svg {
   fill: #757575;
-  width: 16px;
-  height: 12px;
+  width: 100%;
+  height: auto;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .header__list .header__item .header__svg {
+    width: 16px;
+    height: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__list .header__item .header__svg {
+    width: 16px;
+    height: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list .header__item .header__svg {
+    width: 16px;
+    height: 12px;
+  }
+}
 .header__list .header__svg:nth-child(2) {
-  width: 10px;
-  height: 16px;
+  width: auto;
+  height: auto;
+}
+@media screen and (min-width: 480px) {
+  .header__list .header__svg:nth-child(2) {
+    width: 10px;
+    height: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__list .header__svg:nth-child(2) {
+    width: 10px;
+    height: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list .header__svg:nth-child(2) {
+    width: 10px;
+    height: 16px;
+  }
 }
 .header .active {
   color: #2196F3;
@@ -364,8 +400,13 @@ img {
   line-height: 1.61;
   letter-spacing: 1.56px;
   text-transform: uppercase;
-  width: 360px;
+  width: 100%;
   margin: 0 auto 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -415,6 +456,7 @@ img {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .advantages__list {
@@ -433,13 +475,19 @@ img {
   content: "";
   border-radius: 4px;
   background: #F5F4FA;
-  width: 450px;
+  width: 100%;
   height: 120px;
   display: block;
   background-image: url(../img/antenna.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .advantages__item::before {
+    width: 450px;
+    height: 120px;
+  }
 }
 @media screen and (min-width: 720px) {
   .advantages__item::before {
@@ -475,7 +523,13 @@ img {
 }
 .advantages__text {
   color: #757575;
-  width: 450px;
+  width: 100%;
+  text-align: start;
+}
+@media screen and (min-width: 480px) {
+  .advantages__text {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 720px) {
   .advantages__text {
@@ -1041,7 +1095,6 @@ img {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.72px;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .footer .footer__logo {
@@ -1126,9 +1179,9 @@ img {
 }
 .footer__list {
   display: flex;
-  flex-direction: column;
   gap: 9px;
   margin-top: 9px;
+  justify-content: center;
 }
 .footer__svg {
   width: 20px;
@@ -1645,6 +1698,8 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: "Roboto";
+  font-weight: 500;
 }
 .header__list .header__item .header__link:focus {
   border: none;

@@ -45,7 +45,7 @@
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.72px;
-        margin-bottom: 20px;
+        
 
         @media screen and (min-width: 1200px) {
             font-size: 26px;
@@ -141,9 +141,9 @@
 
     &__list {
         display: flex;
-        flex-direction: column;
         gap: 9px;
         margin-top: 9px;
+        justify-content: center;
     }
     
 
