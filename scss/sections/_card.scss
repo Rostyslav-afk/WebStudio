@@ -1,5 +1,6 @@
 @import '../utils/placeholder';
 @import '../utils/mixin';
+
 .card {
 
 
@@ -10,9 +11,29 @@
     }
 
     &__item {
-        flex-basis: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 0px) / 1);
         position: relative;
         overflow: hidden;
+        width: 100%;
+
+
+
+        @media screen and (min-width: 480px) {
+            // width: 450px;
+            // height: 404px;
+        }
+
+        @media screen and (min-width: 768px) {
+            // width: 354px;
+            // height: 440px;
+            flex-basis: calc((100% - 30px) / 2);
+        }
+
+        @media screen and (min-width: 1200px) {
+            // width: 370px;
+            // height: 404px;
+            flex-basis: calc((100% - 60px) / 3);
+        }
     }
 
     &__img {
@@ -22,6 +43,7 @@
 
     &__box {
         padding: 20px 24px;
+
         border: 1px solid #eee;
         background: $main-background;
         text-align: left;
@@ -29,17 +51,27 @@
         z-index: 2;
         position: relative;
 
+        @media screen and (min-width: 480px) {
+            padding-bottom: 20px;
+        }
+
         &:nth-child(2) {
             color: $text-color;
-            font-family: Roboto;
-            @extend %card;
+            font-family: "Roboto";
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 2;
+            letter-spacing: 1.08px;
             font-style: normal;
         }
     }
 
     &__title {
         color: $text-color;
-        @extend %card;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 2;
+        letter-spacing: 1.08px;
     }
 
     &__text {
@@ -57,18 +89,33 @@
         left: 0;
         width: 100%;
         height: 100%;
-        padding: 63px 24px;
+        padding: 77px 24px;
         background: rgba(33, 150, 243, 0.90);
         opacity: 0;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transform: translateY(100%);
         z-index: 1;
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            padding: 49px 24px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 63px 24px;
+        }
     }
+
 
     .box__text {
         width: 100%;
         color: $main-background;
-        @extend %cards;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.54px;
+        text-align: left;
     }
 
     &__item:hover .item__box {
@@ -79,10 +126,10 @@
     .box__text {
         width: 100%;
         color: $main-background;
-        @extend %cards;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.54px;
+        text-align: left;
     }
 }
-
-
-
-
