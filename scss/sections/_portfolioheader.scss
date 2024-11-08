@@ -205,7 +205,12 @@
     }
   }
 
-
+  .header__item:last-child {
+    .header__svg {
+      width: 10px;
+      height: 16px;
+    }
+  }
   .active {
     color: $color-accent;
 
