@@ -19,7 +19,13 @@
 <body>
     <header class="header">
         <div class="container box">
+
             <a href="./index.html" class="header__logo"> <span class="logo__span"> Web</span>Studio </a>
+            <button type="button" class="header__btn " js-open-menu>
+                <svg class="header__menu">
+                    <use href="./img/symbol-defs.svg#icon-byrger"></use>
+                </svg>
+            </button>
             <nav class="header__nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="./index.html" class="nav__link active"
@@ -37,11 +43,54 @@
                 </li>
                 <li class="header__item">
                     <a href="tel:+380961111111" class="header__link"><svg class="header__svg">
-                            <use href="./img/symbol-defs.svg#icon-telephone" ></use>
+                            <use href="./img/symbol-defs.svg#icon-telephone"></use>
                         </svg><span class="header__cell">+38 096 111 11 11</span> </a>
                 </li>
         </div>
         </ul>
+        <div class="mobile__menu is__hidden " js-menu-container>
+            <button type="button" class="mobile__cerrar " js-close-menu>
+                <svg class="close">
+                    <use href="./img/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile__list">
+                <li class="mobile__item">
+                    <p class="mobile__text active">Студія</p>
+                </li>
+                <li class="mobile__item">
+                    <p class="mobile__text">Портфоліо</p>
+                </li>
+                <li class="mobile__item">
+                    <p class="mobile__text">Контакти</p>
+                </li>
+                <li class="mobile__item">
+                    <p class="mobile__text" style=" color: #2196F3;
+                     font-size: 34px; font-weight: 500; letter-spacing: 0.68px;">+38 096 111 11
+                        11</p>
+                </li>
+                <li class="mobile__item">
+                    <p class="mobile__text" style="color: #757575;
+                    font-size: 24px;
+                    font-weight: 500;
+                    letter-spacing: 0.48px;">info@devstudio.com</p>
+                </li>
+            </ul>
+            <ul class="mobile__lest">
+                <li class="lest__item">
+                    <p class="item__text">Instagram</p>
+                </li>
+                <li class="lest__item">
+                    <p class="item__text">Twitter</p>
+                </li>
+                <li class="lest__item">
+                    <p class="item__text">Facebook</p>
+                </li>
+                <li class="lest__item">
+                    <p class="item__text">LinkedIn</p>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
         <!-- Секція герой -->
@@ -302,7 +351,8 @@
                 </div>
                 <div class="modal__box">
                     <label class="modal__label">Телефон
-                        <input type="tel" class="modal__input" required pattern="^(\+?38)?0\d{9}$"placeholder="Введіть номер телефону без пробілів.">
+                        <input type="tel" class="modal__input" required pattern="^(\+?38)?0\d{9}$"
+                            placeholder="Введіть номер телефону без пробілів.">
                         <svg class="modal__svg">
                             <use href="./img/symbol-defs.svg#icon-phone"></use>
                         </svg>
@@ -334,8 +384,9 @@
                 </button>
             </form>
         </div>
-    </div> 
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
