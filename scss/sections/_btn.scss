@@ -14,16 +14,18 @@
         flex-wrap: wrap;
         margin-bottom: 50px;
         gap: 8px;
-        
+        justify-content: left;
+
         @media screen and (min-width: 480px) {}
 
         @media screen and (min-width: 768px) {
             flex-wrap: nowrap;
+            justify-content: center;
         }
 
 
         @media screen and (min-width: 1200px) {
-            
+            justify-content: center;
             
         }
     }

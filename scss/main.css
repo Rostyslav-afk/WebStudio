@@ -1709,10 +1709,17 @@ img {
   flex-wrap: wrap;
   margin-bottom: 50px;
   gap: 8px;
+  justify-content: left;
 }
 @media screen and (min-width: 768px) {
   .btn__list {
     flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn__list {
+    justify-content: center;
   }
 }
 .btn__btn {
