@@ -78,7 +78,7 @@ img {
   text-transform: uppercase;
 }
 
-.modal__span, .modal__text, .footer .address__link, .advantages__text {
+.footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -375,6 +375,10 @@ img {
   letter-spacing: 0.8px;
 }
 
+.mobile__text:hover {
+  color: #2196F3;
+}
+
 .mobile__item:nth-child(3) {
   margin-bottom: 152px;
 }
@@ -440,7 +444,7 @@ img {
   text-transform: uppercase;
 }
 
-.modal__span, .modal__text, .footer .address__link, .advantages__text {
+.footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -644,7 +648,7 @@ img {
   text-transform: uppercase;
 }
 
-.modal__span, .modal__text, .footer .address__link, .advantages__text {
+.footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -728,7 +732,7 @@ img {
   text-transform: uppercase;
 }
 
-.modal__span, .modal__text, .footer .address__link, .advantages__text {
+.footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -912,7 +916,7 @@ img {
   text-transform: uppercase;
 }
 
-.modal__span, .modal__text, .footer .address__link, .advantages__text {
+.footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -1054,7 +1058,7 @@ img {
   text-transform: uppercase;
 }
 
-.modal__span, .modal__text, .footer .address__link, .advantages__text {
+.footer .address__link, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -1346,7 +1350,7 @@ img {
   text-transform: uppercase;
 }
 
-.modal__span, .modal__text, .advantages__text, .footer .address__link {
+.advantages__text, .footer .address__link {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -1377,7 +1381,7 @@ img {
 }
 
 .modal {
-  width: 528px;
+  width: 100%;
   background-color: #fff;
   border-radius: 4px;
   position: absolute;
@@ -1385,6 +1389,21 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 .modal__title {
   color: #212121;
@@ -1394,6 +1413,11 @@ img {
   line-height: 1.15;
   letter-spacing: 0.6px;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 480px) {
+  .modal__title {
+    line-height: 1.5;
+  }
 }
 .modal__label {
   width: 448px;
@@ -1455,8 +1479,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: flex-start;
-  flex-direction: flex-start;
 }
 .modal__checkbox {
   width: 16px;
@@ -1469,13 +1491,37 @@ img {
 }
 .modal__text {
   color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
   margin-left: 8px;
+}
+@media screen and (min-width: 480px) {
+  .modal__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+  }
 }
 .modal__span {
   color: #2196F3;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
   text-decoration-line: underline;
   margin-left: 5px;
   cursor: pointer;
+}
+@media screen and (min-width: 480px) {
+  .modal__span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+  }
 }
 .modal__box {
   position: relative;
@@ -1558,7 +1604,7 @@ img {
   text-transform: uppercase;
 }
 
-.advantages__text, .footer .address__link, .modal__text, .modal__span {
+.advantages__text, .footer .address__link {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -1885,7 +1931,7 @@ img {
   text-transform: uppercase;
 }
 
-.advantages__text, .footer .address__link, .modal__text, .modal__span {
+.advantages__text, .footer .address__link {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -1990,7 +2036,7 @@ img {
   text-transform: uppercase;
 }
 
-.advantages__text, .footer .address__link, .modal__text, .modal__span {
+.advantages__text, .footer .address__link {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
