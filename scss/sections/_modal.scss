@@ -65,6 +65,13 @@
         margin-bottom: 4px;
     }
 
+    &__label:nth-child(5) {
+        display: flex;
+        align-items: center; 
+        gap: 8px; 
+
+    }
+
     &__input {
         display: block;
         width: 100%;
@@ -119,12 +126,6 @@
         }
     }
 
-    &__label:nth-child(5) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
 
 
     &__checkbox {
