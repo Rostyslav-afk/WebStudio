@@ -143,8 +143,8 @@
                     <li class="work__item">
                         <picture>
                             <source
-                                srcset="./img/dekstop/desktopdodat@2.webp 2x, ./img/dekstop/desktopdodat@1x.webp 1x," 
-                                 media="(min-width: 1200px)">
+                                srcset="./img/dekstop/desktopdodat@2x.webp 2x, ./img/dekstop/desktopdodat@1x.webp 1x"
+                                media="(min-width: 1200px)">
                             <img src="./img/computer.jpg" alt="Computer" class="work__img">
                         </picture>
                         <div class="work__box">
@@ -182,7 +182,15 @@
                 <h2 class="comand__title">Наша команда</h2>
                 <ul class="comand__list">
                     <li class="comand__item">
-                        <img src="./img/igor.jpg" alt="Ігор" class="comand__img">
+                        <picture>
+                            <source srcset="./img/dekstop/igordesktop@1x.webp 1x, ./img/dekstop/igordesktop@2x.webp 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./img/tablet/igortablet@1x.webp 1x, ./img/tablet/igortablet@2x.webp 2x,"
+                                media="(min-width: 768px)">
+                            <source srcset="./img/mobile/igormobile@1x.webp 1x, ./img/mobile/igormobile@2x.webp 2x,"
+                                media="(max-width: 767px)">
+                            <img src="./img/igor.jpg" alt="Ігор" class="comand__img">
+                        </picture>
                         <div class="comand__box">
                             <h3 class="comand__subtitle">Ігор Дем'яненко</h3>
                             <p class="comand__text">Product Designer</p>
@@ -203,7 +211,16 @@
                         </div>
                     </li>
                     <li class="comand__item">
-                        <img src="./img/olga.jpg" alt="Ольга" class="comand__img">
+                        <picture>
+                            <source srcset="img/dekstop/olgadesktop@1x.webp 1x, img/dekstop/olgadesktop@2x.webp 2x,"
+                                media="(min-width: 1200px)">
+                            <source srcset="./img/tablet/olgatablet@1x.webp 1x, ./img/tablet/olgatablet@2x.webp 2x"
+                                media="(min-width: 768px)">
+                            <source src="./img/mobile/olgamobile@1x.webp 1x, ./img/mobile/olgamobile@2x.webp 2x"
+                                media="(max-width: 767px)">
+                            <img src="./img/olga.jpg" alt="Ольга" class="comand__img">
+                        </picture>
+
                         <div class="comand__box">
                             <h3 class="comand__subtitle">Ольга Рєпіна</h3>
                             <p class="comand__text">Frontend Developer</p>
@@ -224,7 +241,18 @@
                         </div>
                     </li>
                     <li class="comand__item">
-                        <img src="./img/mukola.jpg" alt="Микола" class="comand__img">
+                        <picture>
+                            <source
+                                srcset="./img/dekstop/mikoladesktop@1x.webp 1x, ./img/dekstop/mikoladesktop@2x.webp 2x"
+                                media="min-width: 1200px">
+                            <source srcset="./img/tablet/mukolat@1x.webp 1x, ./img/tablet/mukolat@2x.webp 2x,"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./img/mobile/mikhailomobile@1x.webp 1x, ./img/mobile/mikhailomobile@2x.webp 2x"
+                                media="(max-width: 767px)">
+                            <img src="./img/mukola.jpg" alt="Микола" class="comand__img">
+                        </picture>
+
                         <div class="comand__box">
                             <h3 class="comand__subtitle">Микола Тарасов</h3>
                             <p class="comand__text">Marketing</p>
@@ -245,7 +273,17 @@
                         </div>
                     </li>
                     <li class="comand__item">
-                        <img src="./img/mikhailo.jpg" alt="Михайло" class="comand__img">
+                        <picture>
+                            <source
+                                srcset="./img/dekstop/mihailodesktop@1x.webp 1x, ./img/dekstop/mihailodesktop@2x.webp 2x"
+                                media="(min-width: 1200px)">
+                            <source src="./img/tablet/mukolaermakov@1x.webp 1x, ./img/tablet/mukolaermakov@2x.webp 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                src="./img/mobile/mikhailoermakovmobile@1x.webp 1x, ./img/mobile/mikhailoermakovmobile@2x.webp 2x">
+                            <img src="./img/mikhailo.jpg" alt="Михайло" class="comand__img">
+                        </picture>
+
                         <div class="comand__box">
                             <h3 class="comand__subtitle">Михайло Єрмаков</h3>
                             <p class="comand__text">UI Designer</p>
