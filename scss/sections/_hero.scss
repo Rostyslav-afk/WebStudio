@@ -6,65 +6,111 @@
     padding-bottom: 118px;
     text-align: center;
     background-image:
-        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img/hero-bc.jpg);
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.../img/mobile/heromobile@1x.webp) ;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(.../img/mobile/heromobile@2x.webp);
+    }
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(.../img/tablet/herotablet@1x.webp);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(.../img/tablet/herotablet@2x.webp);
+        }
+    }
 
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
         padding-bottom: 200px;
-    }
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(.../img/desktop/herodesktop@1x.webp);
 
-    &__title {
-        color: $main-background;
-        text-align: center;
-        font-family: "Roboto", sans-serif;
-        font-size: 26px;
-        font-weight: 900;
-        line-height: 1.61; // 136.364%
-        letter-spacing: 1.56px;
-        text-transform: uppercase;
-        width: 100%;
-        margin: 0 auto 30px;
-
-        @media screen and (min-width: 480px) {
-            width: 360px;
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(.../img/desktop/herodesktop@2x.webp);
         }
 
         @media screen and (min-width: 1200px) {
-            font-size: 44px;
-            font-weight: 900;
-            line-height: 1.36;
-            letter-spacing: 2.64px;
-            width: 696px;
-        }
-    }
-
-    &__button {
-        background: $color-accent;
-        border-radius: 4px;
-        border: $color-accent;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        color: $main-background;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.87; 
-        letter-spacing: 0.96px;
-        font-family: "Roboto", sans-serif;
-        padding: 10px 24px;        
-
-        @media screen and (min-width: 1200px) {
-            padding: 10px 32px;
+            padding-top: 200px;
+            padding-bottom: 200px;
         }
 
-        &:focus {
-            border: none;
-            outline: 3px solid $color-accent;
-            border-radius: 1px;
+        &__title {
             color: $main-background;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 26px;
+            font-weight: 900;
+            line-height: 1.61; // 136.364%
+            letter-spacing: 1.56px;
+            text-transform: uppercase;
+            width: 100%;
+            margin: 0 auto 30px;
+
+            @media screen and (min-width: 480px) {
+                width: 360px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                font-size: 44px;
+                font-weight: 900;
+                line-height: 1.36;
+                letter-spacing: 2.64px;
+                width: 696px;
+            }
+        }
+
+        &__button {
             background: $color-accent;
+            border-radius: 4px;
+            border: $color-accent;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            color: $main-background;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.87;
+            letter-spacing: 0.96px;
+            font-family: "Roboto", sans-serif;
+            padding: 10px 24px;
+
+            @media screen and (min-width: 1200px) {
+                padding: 10px 32px;
+            }
+
+            &:focus {
+                border: none;
+                outline: 3px solid $color-accent;
+                border-radius: 1px;
+                color: $main-background;
+                background: $color-accent;
+            }
         }
     }
 }
