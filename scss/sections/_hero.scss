@@ -120,7 +120,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/img/mobile/heromobile@1x.webp');
+      url('../img/mobile/heromobile@1x.webp');
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -129,7 +129,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('/img/mobile/heromobile@2x.webp');
+        url('../img/mobile/heromobile@2x.webp');
     }
   
     background-position: center;
@@ -143,7 +143,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('/img/tablet/herotablet@1x.webp');
+        url('../img/tablet/herotablet@1x.webp');
       @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -152,7 +152,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url('/img/tablet/herotablet@2x.webp');
+          url('../img/tablet/herotablet@2x.webp');
       }
     }
   
@@ -163,7 +163,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('/img/dekstop/herodesktop@1x.webp');
+        url('../img/dekstop/herodesktop@1x.webp');
       @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -172,7 +172,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url('/img/dekstop/herodesktop@2x.webp');
+          url('../img/dekstop/herodesktop@2x.webp');
       }
     }
   
