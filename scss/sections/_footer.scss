@@ -1,0 +1,282 @@
+@import '../utils/placeholder';
+@import '../utils/mixin';
+
+.footer {
+    background: $footer-background;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &>.container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 60px;
+
+        @media screen and (min-width: 768px) {
+            align-items: first baseline;
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 768px) {
+            width: 235px;
+        }
+    }
+
+    .footer__logo {
+        color: $main-background;
+        font-family: "Raleway";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.72px;
+        
+
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 1.38;
+            letter-spacing: 0.78px;
+        }
+
+        &:focus {
+            border: none;
+            outline: 3px solid $color-accent;
+            border-radius: 1px;
+        }
+    }
+
+    &__span {
+        color: $color-accent;
+        @extend %font;
+    }
+
+    .address {
+        font-style: normal;
+        margin-top: 20px;
+
+        &__link {
+            color: $main-background;
+            font-family: "Roboto", sans-serif;
+            @extend %foonts;
+            width: 100%;
+
+            &:focus {
+                border: none;
+                outline: 3px solid $color-accent;
+                border-radius: 1px;
+            }
+        }
+
+        &__list {
+            @include flex-box($d: flex-start);
+            gap: 9px;
+            margin-top: 9px;
+
+        }
+
+        &__item:nth-child(1) {
+            margin-bottom: 9px;
+
+        }
+
+        &__citation {
+            color: $footer-number;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.71;
+            /* 171.429% */
+            letter-spacing: 0.42px;
+            margin-top: 9px;
+            
+            &:focus {
+                border: none;
+                outline: 3px solid $color-accent;
+                border-radius: 1px;
+            }
+        }
+    }
+
+    &__boxx {
+        @media screen and (min-width: 768px) {
+            margin-left: 165px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 70px;
+        }
+
+    }
+
+    &__subtitle {
+        color: $main-background;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+
+        @media screen and (min-width: 1200px) {
+            line-height: 1.14;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 9px;
+        margin-top: 9px;
+        justify-content: center;
+    }
+    
+
+    &__svg {
+        width: 20px;
+        height: 20px;
+        fill: $main-background;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+
+    &__title {
+        color: $main-background;
+        @extend %accent;
+        margin-bottom: 20px;
+        display: inline-block;
+
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
+    }
+
+    &__bboxx {
+
+        @media screen and (min-width: 1200px) {
+            margin-left: auto;
+        }
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 12px;
+        }
+    }
+
+    &__input {
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0.48px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(33, 150, 243, 0);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        width: 100%;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
+
+        &:focus {
+            border: none;
+            outline: 3px solid $color-accent;
+            border-radius: 1px;
+        }
+    }
+
+    &__button {
+        color: $main-background;
+        background-color: $color-accent;
+        padding: 10px 31px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87;
+        letter-spacing: 0.96px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        @media screen and (min-width: 1200px) {
+            padding: 10px 28px;
+        }
+
+        &:focus {
+            border: none;
+            outline: 3px solid $color-accent;
+            border-radius: 1px;
+            background-color: $color-accent;
+            color: $main-background;
+        }
+    }
+
+    &__svgg {
+        width: 24px;
+        height: 24px;
+        fill: $main-background;
+
+    }
+
+}
+
+.footer__social {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border: none;
+        outline: 3px solid $color-accent;
+        border-radius: 50%;
+        background-color: $color-accent;
+    }
+
+    &:hover {
+        background-color: $color-accent;
+    }
+}

@@ -1,0 +1,76 @@
+@import '../utils/placeholder';
+@import '../utils/mixin';
+
+.btn {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+      padding-bottom: 94px;
+    }
+    &__list {
+        @include flex-box($a: center, $b: center, $c: flex-start, $d: flex-start);
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        gap: 8px;
+        justify-content: left;
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+
+        @media screen and (min-width: 1200px) {
+            justify-content: center;
+            
+        }
+    }
+
+    &__item {
+    
+    }
+
+    &__btn {
+        background-color: $main-team;
+        color: $text-color;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.62;
+        letter-spacing: 0.48px;
+        padding: 6px 25px;
+        border: 0;
+        border-radius: 5px;
+        
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        ;
+        transition-delay: 0;
+
+        @media screen and (min-width: 768px) {
+
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 6px 22px;
+            text-align: center;
+        }
+
+        &:hover,
+        :focus {
+            background: $color-accent;
+            border: none;
+            color: $main-background;
+            box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+            border-radius: 5px;
+
+
+        }
+    }
+}
